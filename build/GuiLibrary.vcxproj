@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugStatic|Win32">
+      <Configuration>DebugStatic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseStatic|Win32">
+      <Configuration>ReleaseStatic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F3E6DD3E-9A1E-4BD4-9C9E-1A593B17AF6C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GuiLibrary</RootNamespace>
+    <ProjectName>Gui3DLibrary</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">
+    <OutDir>$(ProjectDir)\FinalStatic\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">
+    <IntDir>$(ProjectDir)\FinalStatic\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">
+    <OutDir>$(ProjectDir)\DebugStatic\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">
+    <IntDir>$(ProjectDir)\DebugStatic\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>source;$(OGRE_HOME)\include;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\boost_1_42;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)Gui3DDebugStatic.lib</OutputFile>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(OGRE_HOME)\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(OGRE_HOME)\include;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\boost_1_42;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)Gui3DStatic.lib</OutputFile>
+      <AdditionalDependencies>OgreMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OGRE_HOME)\lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Gorilla.h" />
+    <ClInclude Include="source\Gui3D.h" />
+    <ClInclude Include="source\Gui3DButton.h" />
+    <ClInclude Include="source\Gui3DCaption.h" />
+    <ClInclude Include="source\Gui3DCheckbox.h" />
+    <ClInclude Include="source\Gui3DCheckboxSprite.h" />
+    <ClInclude Include="source\Gui3DCheckboxText.h" />
+    <ClInclude Include="source\Gui3DClock.h" />
+    <ClInclude Include="source\Gui3DCombobox.h" />
+    <ClInclude Include="source\Gui3DContainer.h" />
+    <ClInclude Include="source\Gui3DDebugPanelColors.h" />
+    <ClInclude Include="source\Gui3DFunctorBase.h" />
+    <ClInclude Include="source\Gui3DInlineSelector.h" />
+    <ClInclude Include="source\Gui3DListbox.h" />
+    <ClInclude Include="source\Gui3DMemberFunction.h" />
+    <ClInclude Include="source\Gui3DMultipleElementsSelector.h" />
+    <ClInclude Include="source\Gui3DPanel.h" />
+    <ClInclude Include="source\Gui3DPanelColors.h" />
+    <ClInclude Include="source\Gui3DPanelElement.h" />
+    <ClInclude Include="source\Gui3DPanelElementCallback.h" />
+    <ClInclude Include="source\Gui3DProgressBar.h" />
+    <ClInclude Include="source\Gui3DScrollBar.h" />
+    <ClInclude Include="source\Gui3DStringCursorEdit.h" />
+    <ClInclude Include="source\Gui3DTextZone.h" />
+    <ClInclude Include="source\Gui3DUtils.h" />
+    <ClInclude Include="source\Gui3DVerticalSelector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Gorilla.cpp" />
+    <ClCompile Include="source\Gui3D.cpp" />
+    <ClCompile Include="source\Gui3DButton.cpp" />
+    <ClCompile Include="source\Gui3DCaption.cpp" />
+    <ClCompile Include="source\Gui3DCheckbox.cpp" />
+    <ClCompile Include="source\Gui3DCheckboxSprite.cpp" />
+    <ClCompile Include="source\Gui3DCheckboxText.cpp" />
+    <ClCompile Include="source\Gui3DClock.cpp" />
+    <ClCompile Include="source\Gui3DCombobox.cpp" />
+    <ClCompile Include="source\Gui3DContainer.cpp" />
+    <ClCompile Include="source\Gui3DDebugPanelColors.cpp" />
+    <ClCompile Include="source\Gui3DInlineSelector.cpp" />
+    <ClCompile Include="source\Gui3DListbox.cpp" />
+    <ClCompile Include="source\Gui3DMultipleElementsSelector.cpp" />
+    <ClCompile Include="source\Gui3DPanel.cpp" />
+    <ClCompile Include="source\Gui3DPanelElement.cpp" />
+    <ClCompile Include="source\Gui3DProgressBar.cpp" />
+    <ClCompile Include="source\Gui3DScrollBar.cpp" />
+    <ClCompile Include="source\Gui3DStringCursorEdit.cpp" />
+    <ClCompile Include="source\Gui3DTextZone.cpp" />
+    <ClCompile Include="source\Gui3DVerticalSelector.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
