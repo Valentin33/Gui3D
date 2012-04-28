@@ -70,6 +70,10 @@
       <AdditionalLibraryDirectories>$(OGRE_HOME)\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>OgreMain_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
+    <PostBuildEvent>
+      <Command>copy "$(OutDir)Gui3DDebugStatic.lib" "$(ProjectDir)..\sdk\"
+copy $(SolutionDir)source\*.h "$(ProjectDir)..\sdk\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">
     <ClCompile>
@@ -92,6 +96,10 @@
       <AdditionalDependencies>OgreMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(OGRE_HOME)\lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
+    <PostBuildEvent>
+      <Command>copy "$(OutDir)Gui3DStatic.lib" "$(ProjectDir)..\sdk\"
+copy $(SolutionDir)source\*.h "$(ProjectDir)..\sdk\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
