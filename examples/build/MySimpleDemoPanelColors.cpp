@@ -34,9 +34,6 @@ MySimpleDemoPanelColors::MySimpleDemoPanelColors()
 
 	// Panel
 	panelBackgroundSpriteName = "panelBackground";
-	panelCursorSpriteName = "mousepointer";
-	panelCursorSpriteSizeX = 12;
-	panelCursorSpriteSizeY = 18;
 
 	// Button
 	// In the demo, sprites are used for the "click me!" button
