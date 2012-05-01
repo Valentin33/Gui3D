@@ -30,16 +30,16 @@ namespace Gui3D
 {
 
 // Static configuration of elements size
-static float VERTICAL_SELECTOR_MARGIN_BOTTOM = 0.02;
-static float VERTICAL_SELECTOR_MARGIN_LEFT = 0.02;
-static float VERTICAL_SELECTOR_MARGIN_CAPTIONS_BUTTONS = 0.02;
-static float VERTICAL_SELECTOR_BUTTON_SIZE = 0.08; // button are consider as a square ; their size on X and Y is BUTTON_SIZE * width
-static float VERTICAL_SELECTOR_CAPTION_X_SIZE = 0.86;
+static float VERTICAL_SELECTOR_MARGIN_BOTTOM = 0.02f;
+static float VERTICAL_SELECTOR_MARGIN_LEFT = 0.02f;
+static float VERTICAL_SELECTOR_MARGIN_CAPTIONS_BUTTONS = 0.02f;
+static float VERTICAL_SELECTOR_BUTTON_SIZE = 0.08f; // button are consider as a square ; their size on X and Y is BUTTON_SIZE * width
+static float VERTICAL_SELECTOR_CAPTION_X_SIZE = 0.86f;
 
-static float VERTICAL_SELECTOR_CAPTION_HEIGHT_SPACING = 0.05;
+static float VERTICAL_SELECTOR_CAPTION_HEIGHT_SPACING = 0.05f;
 
-static float VERTICAL_SELECTOR_MARGIN_TOP = 0.02;
-static float VERTICAL_SELECTOR_CAPTION_Y_SIZE = 0.15;
+static float VERTICAL_SELECTOR_MARGIN_TOP = 0.02f;
+static float VERTICAL_SELECTOR_CAPTION_Y_SIZE = 0.15f;
 
 using namespace std;
 

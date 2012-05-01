@@ -52,6 +52,8 @@ struct PanelColors
 	{
 		// NorthSouth gradient by default
 		panelGradientType = Gorilla::Gradient_NorthSouth;
+
+		buttonBackgroundClickedGradientType = panelGradientType;
 		buttonBackgroundOveredGradientType = panelGradientType;
 		buttonBackgroundNotOveredGradientType = panelGradientType;
 		buttonBackgroundInactiveGradientType = panelGradientType;
@@ -79,6 +81,42 @@ struct PanelColors
 
 		progressbarBackgroundGradientType = panelGradientType;
 		progressbarLoadingBarGradientType = panelGradientType;
+
+
+		// Init border sizes
+		size_t defaultBorderSize = 0;
+		
+		panelCursorSpriteSizeX = defaultBorderSize;
+		panelCursorSpriteSizeY = defaultBorderSize;
+		panelBorderSize = defaultBorderSize;
+
+		buttonTextSize = defaultBorderSize;
+		buttonBorderSize = defaultBorderSize;
+
+		checkboxTextSize = defaultBorderSize;
+		checkboxBorderSize = defaultBorderSize;
+
+		comboboxTextSize = defaultBorderSize;
+		comboboxBorderSize = defaultBorderSize;
+
+		inlineselectorTextSize = defaultBorderSize;
+		inlineselectorBorderSize = defaultBorderSize;
+
+		listboxTextSize = defaultBorderSize;
+		listboxBorderSize = defaultBorderSize;
+
+		scrollbarTextSize = defaultBorderSize;
+		scrollbarBorderSize = defaultBorderSize;
+		scrollbarCursorBorderSize = defaultBorderSize;
+
+		textzoneTextSize = defaultBorderSize;
+		textzoneBorderSize = defaultBorderSize;
+
+		captionTextSize = defaultBorderSize;
+		captionBorderSize = defaultBorderSize;
+
+		progressbarTextSize = defaultBorderSize;
+		progressbarBorderSize = defaultBorderSize;
 	}
 
 	// General
@@ -86,6 +124,10 @@ struct PanelColors
 
 	// Panel
 	Ogre::String panelBackgroundSpriteName;
+
+	Ogre::String panelCursorSpriteName;
+	size_t panelCursorSpriteSizeX;
+	size_t panelCursorSpriteSizeY;
 
 	Gorilla::Gradient panelGradientType; //!< \brief The gradient type of a panel. If you want a single color, set the gradient to whatever type you want and the same colors for gradientStart and gradientEnd.
 	Ogre::ColourValue panelGradientColorStart; 
@@ -103,6 +145,11 @@ struct PanelColors
 	Ogre::String buttonOveredSpriteName;
 	Ogre::String buttonNotOveredSpriteName;
 	Ogre::String buttonInactiveSpriteName;
+	Ogre::String buttonClickedSpriteName;
+
+	Gorilla::Gradient buttonBackgroundClickedGradientType; //!< \brief The gradient type of an overed button. If you want a single color, set the gradient to whatever type you want and the same colors for gradientStart and gradientEnd.
+	Ogre::ColourValue buttonBackgroundClickedGradientStart;
+	Ogre::ColourValue buttonBackgroundClickedGradientEnd;
 
 	Gorilla::Gradient buttonBackgroundOveredGradientType; //!< \brief The gradient type of an overed button. If you want a single color, set the gradient to whatever type you want and the same colors for gradientStart and gradientEnd.
 	Ogre::ColourValue buttonBackgroundOveredGradientStart;
@@ -170,10 +217,12 @@ struct PanelColors
 	Ogre::String comboboxButtonPreviousOveredSpriteName;
 	Ogre::String comboboxButtonPreviousNotOveredSpriteName;
 	Ogre::String comboboxButtonPreviousInactiveSpriteName;
+	Ogre::String comboboxButtonPreviousClickedSpriteName;
 
 	Ogre::String comboboxButtonNextOveredSpriteName;
 	Ogre::String comboboxButtonNextNotOveredSpriteName;
 	Ogre::String comboboxButtonNextInactiveSpriteName;
+	Ogre::String comboboxButtonNextClickedSpriteName;
 
 	Gorilla::Gradient comboboxBackgroundGradientType; //!< \brief The gradient type of an overed combobox. If you want a single color, set the gradient to whatever type you want and the same colors for gradientStart and gradientEnd.
 	Ogre::ColourValue comboboxBackgroundGradientStart;
@@ -199,10 +248,12 @@ struct PanelColors
 	Ogre::String inlineselectorButtonPreviousOveredSpriteName;
 	Ogre::String inlineselectorButtonPreviousNotOveredSpriteName;
 	Ogre::String inlineselectorButtonPreviousInactiveSpriteName;
+	Ogre::String inlineselectorButtonPreviousClickedSpriteName;
 
 	Ogre::String inlineselectorButtonNextOveredSpriteName;
 	Ogre::String inlineselectorButtonNextNotOveredSpriteName;
 	Ogre::String inlineselectorButtonNextInactiveSpriteName;
+	Ogre::String inlineselectorButtonNextClickedSpriteName;
 
 	Gorilla::Gradient inlineselectorBackgroundGradientType; //!< \brief The gradient type of an inline selector. If you want a single color, set the gradient to whatever type you want and the same colors for gradientStart and gradientEnd.
 	Ogre::ColourValue inlineselectorBackgroundGradientStart;
@@ -224,10 +275,12 @@ struct PanelColors
 	Ogre::String listboxButtonPreviousOveredSpriteName;
 	Ogre::String listboxButtonPreviousNotOveredSpriteName;
 	Ogre::String listboxButtonPreviousInactiveSpriteName;
+	Ogre::String listboxButtonPreviousClickedSpriteName;
 
 	Ogre::String listboxButtonNextOveredSpriteName;
 	Ogre::String listboxButtonNextNotOveredSpriteName;
 	Ogre::String listboxButtonNextInactiveSpriteName;
+	Ogre::String listboxButtonNextClickedSpriteName;
 
 	Gorilla::Gradient listboxBackgroundGradientType; //!< \brief The gradient type of an overed combobox. If you want a single color, set the gradient to whatever type you want and the same colors for gradientStart and gradientEnd.
 	Ogre::ColourValue listboxBackgroundGradientStart;

@@ -123,18 +123,22 @@ void MultipleElementsSelector::injectTimeAndMousePosition(double time, const Ogr
 void MultipleElementsSelector::setBackgroundImageButtons(const Ogre::String& previousButtonOveredSpriteName,
 	const Ogre::String& previousButtonNotOveredSpriteName,
 	const Ogre::String& previousButtonInactiveSpriteName,
+	const Ogre::String& previousButtonClickedSpriteName,
 	const Ogre::String& nextButtonOveredSpriteName,
 	const Ogre::String& nextButtonNotOveredSpriteName,
-	const Ogre::String& nextButtonInactiveSpriteName)
+	const Ogre::String& nextButtonInactiveSpriteName,
+	const Ogre::String& nextButtonClickedSpriteName)
 {
 	// Make sure buttons background images are not empty or none
 	//  to remove the text on buttons
 	if (previousButtonOveredSpriteName.length() == 0 || previousButtonOveredSpriteName == "none" ||
 		previousButtonNotOveredSpriteName.length() == 0 || previousButtonNotOveredSpriteName == "none" ||
 		previousButtonInactiveSpriteName.length() == 0 || previousButtonInactiveSpriteName == "none" ||
+		previousButtonClickedSpriteName.length() == 0 || previousButtonClickedSpriteName == "none" ||
 		nextButtonOveredSpriteName.length() == 0 || nextButtonOveredSpriteName == "none" ||
 		nextButtonNotOveredSpriteName.length() == 0 || nextButtonNotOveredSpriteName == "none" ||
-		nextButtonInactiveSpriteName.length() == 0 || nextButtonInactiveSpriteName == "none")
+		nextButtonInactiveSpriteName.length() == 0 || nextButtonInactiveSpriteName == "none" ||
+		nextButtonClickedSpriteName.length() == 0 || nextButtonClickedSpriteName == "none")
 	{
 		mPreviousElementsButton->setText("<");
 		mNextElementsButton->setText(">");
@@ -143,12 +147,14 @@ void MultipleElementsSelector::setBackgroundImageButtons(const Ogre::String& pre
 	{
 		mPreviousElementsButton->setBackgroundImage(previousButtonOveredSpriteName, 
 			previousButtonNotOveredSpriteName, 
-			previousButtonInactiveSpriteName);
+			previousButtonInactiveSpriteName,
+			previousButtonClickedSpriteName);
 		mPreviousElementsButton->setText("");
 
 		mNextElementsButton->setBackgroundImage(nextButtonOveredSpriteName, 
 			nextButtonNotOveredSpriteName, 
-			nextButtonInactiveSpriteName);
+			nextButtonInactiveSpriteName,
+			nextButtonClickedSpriteName);
 		mNextElementsButton->setText("");
 	}
 }

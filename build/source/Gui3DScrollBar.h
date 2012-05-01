@@ -97,6 +97,10 @@ public:
 	*/
 	void setDisplayedPrecision(int precision, bool fixedValuePrecision);
 
+	/** \brief Set if the value should be displayed on the widget
+	*/
+	void setDisplayValue(bool displayValue);
+
 	/** \brief Set the cursor width and height depending on the element width and height.
 	*/
 	void setCursorWidthHeightPercent(Ogre::Real widthPercent, 
@@ -121,6 +125,11 @@ public:
 		const Ogre::String& cursorNotOveredSpriteName,
 		const Ogre::String& cursorSelectedOveredSpriteName);
 
+	/** \brief Set if the callback function should be called even when the
+	user is selecting the value (not only when he released the mouse)
+	*/
+	void setCallCallbackOnSelectingValue(bool callCallbackOnSelectingalue);
+
 protected:
 	Ogre::Real mMinValue;
 
@@ -137,6 +146,10 @@ protected:
 	int mValuePrecision; //!< \brief Set the precision of the value inside the scrollbar
 
 	bool mFixedValuePrecision; //!< \brief Fixed point notation for the value inside the scrollbar
+
+	bool mDisplayValue; //!< \brief Display the value of the scrollbar
+
+	bool mCallCallbackOnSelectingValue; //!< \brief Call the callback when selecting the value
 
 	Gorilla::Rectangle* mCursor; //!< \brief The movable cursor of the scrollbar
 

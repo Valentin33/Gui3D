@@ -60,7 +60,8 @@ class Panel : public Container
 public:
 	Panel(Gui3D* gui, 
 		Ogre::SceneManager* sceneMgr, 
-		const Ogre::Vector2& size, 
+		const Ogre::Vector2& size,
+		Ogre::Real distanceFromPanelToInteractWith,
 		Ogre::String atlasName,
 		Ogre::String name);
 
@@ -71,6 +72,10 @@ public:
 			If the element isn't contained by this panel, nothing will happened.
 	*/
 	void setFocusedElement(PanelElement* e);
+
+	/** \brief Set the distance the user can interact with the panel
+	*/
+	void setDistanceFromPanelToInteractWith(Ogre::Real distanceFromPanelToInteractWith);
 	
 	void injectKeyPressed(const OIS::KeyEvent& evt);
 
@@ -84,8 +89,9 @@ public:
 
 	/** \brief Send a ray from a part of the screen to this panel to
 	actualize the internal mouse position on the panel.
+	Return if the ray intersects with the panel. 
 	*/
-	void injectMouseMoved(const Ogre::Ray& ray);
+	bool injectMouseMoved(const Ogre::Ray& ray);
 
 	/** \brief Inject time to have animations with panel elements, such as
 	a flash on and off of a cursor in Textzones
@@ -178,9 +184,12 @@ protected:
 	Ogre::Vector2 mSize;
 
 	Ogre::Vector2 mInternalMousePos; //!< \brief The Internal position of the mouse in the panel
+	Gorilla::Rectangle* mMousePointer;
 
 	std::vector<PanelElement*> mPanelElements;
 	PanelElement* mFocusedPanelElement; //!< \brief The element that actually have the focus
+
+	Ogre::Real mDistanceFromPanelToInteractWith; //!< \brief The distance the origin of a ray can be to interact with the panel.
 
 	/** \brief Save key pressed when there's no focused element
 	If a focusedElement is set before keyReleased, these keys are then sent

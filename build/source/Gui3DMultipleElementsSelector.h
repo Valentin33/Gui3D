@@ -70,9 +70,11 @@ public:
 	void setBackgroundImageButtons(const Ogre::String& previousButtonOveredSpriteName,
 		const Ogre::String& previousButtonNotOveredSpriteName,
 		const Ogre::String& previousButtonInactiveSpriteName,
+		const Ogre::String& previousButtonClickedSpriteName,
 		const Ogre::String& nextButtonOveredSpriteName,
 		const Ogre::String& nextButtonNotOveredSpriteName,
-		const Ogre::String& nextButtonInactiveSpriteName);
+		const Ogre::String& nextButtonInactiveSpriteName,
+		const Ogre::String& nextButtonClickedSpriteName);
 
 	virtual void setPosition(int left, int top);
 

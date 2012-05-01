@@ -37,7 +37,7 @@ Button::Button(Ogre::Real x,
 	size_t height,
 	const Ogre::String& text,
 	Container* parentContainer)
-	: PanelElementCallback(parentContainer), mIsActive(true)
+	: PanelElementCallback(parentContainer), mIsActive(true), mIsClicked(false)
 {
 	mCaption = mParentContainer->getGUILayer()->createCaption(getColors()->buttonTextSize, x, y, text);
 	mCaption->align(Gorilla::TextAlign_Centre);
@@ -82,6 +82,10 @@ void Button::injectMousePressed(const OIS::MouseEvent& evt,
 	{
 		if (!mIsActive)
 			return;
+
+		mIsClicked = true;
+
+		_actualize();
 	}
 }
 
@@ -91,6 +95,8 @@ void Button::injectMouseReleased(const OIS::MouseEvent& evt,
 {
 	if (id == OIS::MB_Left)
 	{
+		mIsClicked = false;
+
 		if (!mIsActive)
 			return;
 
@@ -168,23 +174,27 @@ Ogre::Vector2 Button::getPosition()
 
 void Button::setBackgroundImage(const Ogre::String& overSpriteName, 
 	const Ogre::String& notOverSpriteName,
-	const Ogre::String& inactiveSpriteName)
+	const Ogre::String& inactiveSpriteName,
+	const Ogre::String& clickedSpriteName)
 {
 	_clearRectangleDesign();
 	
 	if (overSpriteName.length() == 0 || overSpriteName == "none" ||
 		notOverSpriteName.length() == 0 || notOverSpriteName == "none" ||
-		inactiveSpriteName.length() == 0 || inactiveSpriteName == "none")
+		inactiveSpriteName.length() == 0 || inactiveSpriteName == "none" ||
+		clickedSpriteName.length() == 0 || clickedSpriteName == "none")
 	{
 		mOverSpriteName = "";
 		mNotOverSpriteName = "";
 		mInactiveSpriteName = "";
+		mClickedSpriteName = "";
 	}
 	else
 	{
 		mOverSpriteName = overSpriteName;
 		mNotOverSpriteName = notOverSpriteName;
 		mInactiveSpriteName = inactiveSpriteName;
+		mClickedSpriteName = clickedSpriteName;
 		mDesign->border(0, getColors()->transparent);
 	}
 
@@ -237,10 +247,30 @@ void Button::_unOver()
 }
 
 
+void Button::_clicked()
+{
+	if (!mClickedSpriteName.empty())
+		mDesign->background_image(mClickedSpriteName);
+	else
+	{
+		mDesign->background_gradient(getColors()->buttonBackgroundClickedGradientType, 
+				getColors()->buttonBackgroundClickedGradientStart,
+				getColors()->buttonBackgroundClickedGradientEnd);
+		mDesign->border(getColors()->buttonBorderSize, getColors()->buttonBorder);
+		mCaption->colour(getColors()->buttonText);
+	}
+}
+
+
 void Button::_actualize()
 {
 	if (mIsActive)
-		mOvered ? _over() : _unOver();
+	{
+		if (mIsClicked)
+			_clicked();
+		else
+			mOvered ? _over() : _unOver();
+	}
 	else
 		_inactive();
 }

@@ -26,6 +26,10 @@
 
 #include "Gui3DProgressBar.h"
 
+#include <algorithm>
+
+using namespace std;
+
 namespace Gui3D
 {
 
@@ -148,7 +152,7 @@ void ProgressBar::setSize(int width, int height)
 void ProgressBar::setValue(double value)
 {
 	// Make sure value is between 0 and 1
-	mValue = (value > 1.) ? 1. : ((value < 0.) ? 0. : value);
+	mValue = max<double>(0, min<double>(1, value)); 
 
 	int newProgressBarRectangleWidth = mValue * mCaption->width();
 

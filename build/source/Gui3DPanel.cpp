@@ -38,9 +38,11 @@ using namespace std;
 Panel::Panel(Gui3D* gui, 
 	Ogre::SceneManager* sceneMgr, 
 	const Ogre::Vector2& size,
+	Ogre::Real distanceFromPanelToInteractWith,
 	Ogre::String atlasName,
 	Ogre::String name)
-	: Container(gui), mSize(size), mFocusedPanelElement(nullptr)
+	: Container(gui), mSize(size), mFocusedPanelElement(nullptr),
+		mDistanceFromPanelToInteractWith(distanceFromPanelToInteractWith)
 {
 	mScreenRenderable = 
 		gui->createScreenRenderable(Ogre::Vector2(mSize.x, mSize.y), atlasName, name);
@@ -67,6 +69,22 @@ Panel::Panel(Gui3D* gui,
 	}
 	else
 		mBackground->background_image(getPanelColors()->panelBackgroundSpriteName);
+
+
+	// Create an empty mouse pointer which follow the mouse cursor
+	mMousePointer = mGUILayer->createRectangle(0, 0, 0, 0);
+
+	if (getPanelColors()->panelCursorSpriteName.length() == 0 ||
+		getPanelColors()->panelCursorSpriteName == "none")
+	{
+		mMousePointer->background_colour(Gorilla::Colours::None);
+	}
+	else
+	{
+		mMousePointer->width(getPanelColors()->panelCursorSpriteSizeX);
+		mMousePointer->height(getPanelColors()->panelCursorSpriteSizeY);
+		mMousePointer->background_image(getPanelColors()->panelCursorSpriteName);
+	}
 }
 
 
@@ -91,6 +109,12 @@ void Panel::setFocusedElement(PanelElement* e)
 			break;
 		}
 	}
+}
+
+
+void Panel::setDistanceFromPanelToInteractWith(Ogre::Real distanceFromPanelToInteractWith)
+{
+	mDistanceFromPanelToInteractWith = distanceFromPanelToInteractWith;
 }
 
 
@@ -211,7 +235,7 @@ void Panel::injectMouseReleased(const OIS::MouseEvent& evt,
 }
 
 
-void Panel::injectMouseMoved(const Ogre::Ray& ray)
+bool Panel::injectMouseMoved(const Ogre::Ray& ray)
 {
 	Ogre::Matrix4 transform;
 	transform.makeTransform(mNode->getPosition(), mNode->getScale(), mNode->getOrientation());
@@ -221,7 +245,10 @@ void Panel::injectMouseMoved(const Ogre::Ray& ray)
 	pair<bool, Ogre::Real> result = Ogre::Math::intersects(ray, aabb);
 
 	if (result.first == false)
-		return;
+	{
+		unOverAllElements();
+		return false;
+	}
 
 	Ogre::Vector3 a,b,c,d;
 	Ogre::Vector2 halfSize = mSize * 0.5f;
@@ -234,12 +261,17 @@ void Panel::injectMouseMoved(const Ogre::Ray& ray)
 	if (result.first == false)
 		result = Ogre::Math::intersects(ray, c, d, b);
 	if (result.first == false)
-		return;
+	{
+		unOverAllElements();
+		return false;
+	}
+	if (result.second > mDistanceFromPanelToInteractWith)
+	{
+		unOverAllElements();
+		return false;
+	}
 
-	if (result.second > 10.0f)
-		return;
-
-	Ogre::Vector3 hitPos = ( ray.getOrigin() + (ray.getDirection() * result.second) );
+	Ogre::Vector3 hitPos = (ray.getOrigin() + (ray.getDirection() * result.second));
 	Ogre::Vector3 localPos = transform.inverse() * hitPos;
 	localPos.x += halfSize.x;
 	localPos.y -= halfSize.y;
@@ -251,10 +283,13 @@ void Panel::injectMouseMoved(const Ogre::Ray& ray)
 	localPos.y = Ogre::Math::Clamp<Ogre::Real>(-localPos.y, 0, (mSize.y * 100) - 18);
 
 	mInternalMousePos = Ogre::Vector2(localPos.x, localPos.y);
+	mMousePointer->position(mInternalMousePos);
 
 	// Let's actualize the "over" for each elements
 	for (size_t i=0; i < mPanelElements.size(); i++)
 		mPanelElements[i]->isOver(mInternalMousePos);
+
+	return true;
 }
 
 
@@ -291,7 +326,8 @@ Button* Panel::makeButton(Ogre::Real x,
 		x, y, width, height, text, this);
 	button->setBackgroundImage(getPanelColors()->buttonOveredSpriteName,
 		getPanelColors()->buttonNotOveredSpriteName,
-		getPanelColors()->buttonInactiveSpriteName);
+		getPanelColors()->buttonInactiveSpriteName,
+		getPanelColors()->buttonClickedSpriteName);
 	addItem(button);
 	return button;
 }
@@ -350,9 +386,11 @@ Combobox* Panel::makeCombobox(Ogre::Real x,
 	combobox->setBackgroundImageButtons(getPanelColors()->comboboxButtonPreviousOveredSpriteName,
 		getPanelColors()->comboboxButtonPreviousNotOveredSpriteName,
 		getPanelColors()->comboboxButtonPreviousInactiveSpriteName,
+		getPanelColors()->comboboxButtonPreviousClickedSpriteName,
 		getPanelColors()->comboboxButtonNextOveredSpriteName,
 		getPanelColors()->comboboxButtonNextNotOveredSpriteName,
-		getPanelColors()->comboboxButtonNextInactiveSpriteName);
+		getPanelColors()->comboboxButtonNextInactiveSpriteName,
+		getPanelColors()->comboboxButtonNextClickedSpriteName);
 	addItem(combobox);
 	return combobox;
 }
@@ -369,9 +407,11 @@ Listbox* Panel::makeListbox(Ogre::Real x,
 	listBox->setBackgroundImageButtons(getPanelColors()->listboxButtonPreviousOveredSpriteName,
 		getPanelColors()->listboxButtonPreviousNotOveredSpriteName,
 		getPanelColors()->listboxButtonPreviousInactiveSpriteName,
+		getPanelColors()->listboxButtonPreviousClickedSpriteName,
 		getPanelColors()->listboxButtonNextOveredSpriteName,
 		getPanelColors()->listboxButtonNextNotOveredSpriteName,
-		getPanelColors()->listboxButtonNextInactiveSpriteName);
+		getPanelColors()->listboxButtonNextInactiveSpriteName,
+		getPanelColors()->listboxButtonNextClickedSpriteName);
 	addItem(listBox);
 	return listBox;
 }
@@ -388,9 +428,11 @@ InlineSelector* Panel::makeInlineSelector(Ogre::Real x,
 	inlineSelector->setBackgroundImageButtons(getPanelColors()->inlineselectorButtonPreviousOveredSpriteName,
 		getPanelColors()->inlineselectorButtonPreviousNotOveredSpriteName,
 		getPanelColors()->inlineselectorButtonPreviousInactiveSpriteName,
+		getPanelColors()->inlineselectorButtonPreviousClickedSpriteName,
 		getPanelColors()->inlineselectorButtonNextOveredSpriteName,
 		getPanelColors()->inlineselectorButtonNextNotOveredSpriteName,
-		getPanelColors()->inlineselectorButtonNextInactiveSpriteName);
+		getPanelColors()->inlineselectorButtonNextInactiveSpriteName,
+		getPanelColors()->inlineselectorButtonNextClickedSpriteName);
 	addItem(inlineSelector);
 	return inlineSelector;
 }

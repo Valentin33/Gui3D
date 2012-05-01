@@ -1,0 +1,38 @@
+
+material feuilles
+{
+
+	technique
+	{
+		pass
+		{
+			ambient 0.8 0.8 0.8
+			
+			texture_unit
+            {
+                texture tree_feuilles.jpg
+            }
+		}
+
+	}
+
+}
+
+
+
+material tronc
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.4 0.2 0 1
+			diffuse 0.588235 0.588235 0.588235 1
+			specular 0 0 0 1 10
+		}
+
+	}
+
+}
+
+

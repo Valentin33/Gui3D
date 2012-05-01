@@ -1,0 +1,23 @@
+Gui3D Library v1.01
+
+*****************************
+	CHANGELOG FOR 1.01 version
+*****************************
+
+ScrollBar : call the callback when the value is updating (not only when value is confirmed by a mouseRelease).
+			See ScrollBar::setCallCallbackOnSelecting(bool)
+
+Panel : Display a mouse on each panel >> Added a Panel::distanceFromPanelToInteractWith (with setter), 
+			and a sprite which follow the internal mouse position. PanelColors : panelCursorSpriteName, panelCursorSpriteSizeX, panelCursorSpriteSizeY
+
+PanelColors : default value for the border and text size in PanelColors. Unitialized int can produce undesired behavior (such as a VERY big border)
+
+Button : Added buttonBackgroundClickedGradientType + buttonClickedSpriteName in the PanelColors
+		> Added a new parameter for Button::setBackgroundImage() : clickedSpriteName
+		> Because of the previous change, added two new parameter for 
+			the setBackgroundImage method (nextButtonClickedSpriteName + previousButtonClickedSpriteName) of :
+			- Combobox
+			- ListBox
+			- InlineSelector
+
+Project : Update the project to automatically copy header and lib files into sdk/ folder instead of doing it manually.

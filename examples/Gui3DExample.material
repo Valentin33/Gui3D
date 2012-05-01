@@ -1,0 +1,15 @@
+
+material Gui3DExample/Ground
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Gui3DExampleGround.jpg
+			}
+		}
+	}
+}

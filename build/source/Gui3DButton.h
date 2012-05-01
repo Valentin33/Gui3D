@@ -98,10 +98,13 @@ public:
 	*/
 	void setBackgroundImage(const Ogre::String& overSpriteName, 
 		const Ogre::String& notOverSpriteName,
-		const Ogre::String& inactiveSpriteName);
+		const Ogre::String& inactiveSpriteName,
+		const Ogre::String& clickedSpriteName);
 
 protected:
-	bool mIsActive;
+	bool mIsActive; //!< \brief The button can be clicked
+
+	bool mIsClicked; //!< \brief The button is currently clicked
 	
 	Ogre::String mOverSpriteName;
 
@@ -109,11 +112,15 @@ protected:
 
 	Ogre::String mInactiveSpriteName;
 
+	Ogre::String mClickedSpriteName;
+
 	void _over();
 
 	void _unOver();
 
 	void _inactive();
+
+	void _clicked();
 
 	void _actualize();
 };

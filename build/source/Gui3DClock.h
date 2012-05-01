@@ -23,6 +23,8 @@
 	THE SOFTWARE.
 */
 
+// TODO : Ogre::Timer...
+
 #ifndef Gui3DClock_H
 #define Gui3DClock_H
 

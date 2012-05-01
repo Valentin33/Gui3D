@@ -1,0 +1,95 @@
+
+material gold01
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.25 0.205882 0.109804 1
+			diffuse 0.25 0.205882 0.109804 1
+			specular 1 1 1 1 74.6972
+			cull_hardware none
+			cull_software none
+		}
+
+	}
+
+}
+
+
+
+material silver01
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.147059 0.155882 0.166667 1
+			diffuse 0.147059 0.155882 0.166667 1
+			specular 1 1 1 1 74.6972
+			cull_hardware none
+			cull_software none
+		}
+
+	}
+
+}
+
+
+
+material DoorEdge01
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.705882 0.321569 0.176471 1
+			diffuse 0.705882 0.321569 0.176471 1
+			specular 0.6 0.6 0.6 1 43.8907
+			cull_hardware none
+			cull_software none
+		}
+
+	}
+
+}
+
+
+
+material monitor01
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.784314 0.784314 0.784314 1
+			diffuse 0.784314 0.784314 0.784314 1
+			specular 0 0 0 1 53.8082
+			cull_hardware none
+			cull_software none
+		}
+
+	}
+
+}
+
+
+
+material black01
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.196078 0.196078 0.196078 1
+			diffuse 0.196078 0.196078 0.196078 1
+			specular 0 0 0 1 53.8082
+			cull_hardware none
+			cull_software none
+		}
+
+	}
+
+}
+
+

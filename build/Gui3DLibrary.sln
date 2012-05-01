@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GuiLibrary", "GuiLibrary.vcxproj", "{F3E6DD3E-9A1E-4BD4-9C9E-1A593B17AF6C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GuiLibrary", "Gui3DLibrary.vcxproj", "{F3E6DD3E-9A1E-4BD4-9C9E-1A593B17AF6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
