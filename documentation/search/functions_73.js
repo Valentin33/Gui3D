@@ -1,12 +1,15 @@
 var searchData=
 [
-  ['setbackgroundimage',['setBackgroundImage',['../class_gui3_d_1_1_button.html#aba76d77e18bd5421ab1b3a45436de63d',1,'Gui3D::Button::setBackgroundImage()'],['../class_gui3_d_1_1_caption.html#af1ef425953ad1a449057839bb49c9fa7',1,'Gui3D::Caption::setBackgroundImage()']]],
-  ['setbackgroundimagebuttons',['setBackgroundImageButtons',['../class_gui3_d_1_1_multiple_elements_selector.html#abe405194c7435e5d5654734c8f5c90ba',1,'Gui3D::MultipleElementsSelector']]],
+  ['setbackgroundimage',['setBackgroundImage',['../class_gui3_d_1_1_button.html#abb80d6e7fc0f952fa88ce545ddc3d1da',1,'Gui3D::Button::setBackgroundImage()'],['../class_gui3_d_1_1_caption.html#af1ef425953ad1a449057839bb49c9fa7',1,'Gui3D::Caption::setBackgroundImage()']]],
+  ['setbackgroundimagebuttons',['setBackgroundImageButtons',['../class_gui3_d_1_1_multiple_elements_selector.html#a893596f79b187b23b80afd4011b38308',1,'Gui3D::MultipleElementsSelector']]],
+  ['setcallcallbackonselectingvalue',['setCallCallbackOnSelectingValue',['../class_gui3_d_1_1_scroll_bar.html#a79eed05b5cf9cff64a21da9137e9d0aa',1,'Gui3D::ScrollBar']]],
   ['setcurrentvalue',['setCurrentValue',['../class_gui3_d_1_1_combobox.html#a03ee057df2368d5f31c42d1e33726182',1,'Gui3D::Combobox::setCurrentValue()'],['../class_gui3_d_1_1_inline_selector.html#ae1b57be07c6c843e963af368c3f4a175',1,'Gui3D::InlineSelector::setCurrentValue()']]],
   ['setcursor',['setCursor',['../class_gui3_d_1_1_string_cursor_edit.html#a4287337941f58637d30aa403becfb667',1,'Gui3D::StringCursorEdit']]],
   ['setcursorsprites',['setCursorSprites',['../class_gui3_d_1_1_scroll_bar.html#a7331215811a64198340db03a2aa64fd3',1,'Gui3D::ScrollBar']]],
   ['setcursorwidthheightpercent',['setCursorWidthHeightPercent',['../class_gui3_d_1_1_scroll_bar.html#afbf27cb24ccbfb9e1aeceeedee8dbb06',1,'Gui3D::ScrollBar']]],
   ['setdisplayedprecision',['setDisplayedPrecision',['../class_gui3_d_1_1_scroll_bar.html#acd6e2243f9b5a15b6c683a3c509126b1',1,'Gui3D::ScrollBar']]],
+  ['setdisplayvalue',['setDisplayValue',['../class_gui3_d_1_1_scroll_bar.html#aa8f11c2513b720867b28374c4ce90034',1,'Gui3D::ScrollBar']]],
+  ['setdistancefrompaneltointeractwith',['setDistanceFromPanelToInteractWith',['../class_gui3_d_1_1_panel.html#a1a485d23ecfa3b8b1fcbdec91cc332ba',1,'Gui3D::Panel']]],
   ['setfocus',['setFocus',['../class_gui3_d_1_1_listbox.html#af65fd3d3addde492f00ca11ffe06c633',1,'Gui3D::Listbox::setFocus()'],['../class_gui3_d_1_1_panel_element.html#af3c2b2f6e06ffaf39e0916e1478af9f0',1,'Gui3D::PanelElement::setFocus()']]],
   ['setfocusedelement',['setFocusedElement',['../class_gui3_d_1_1_panel.html#a843dfb48003eae4628292caee3b7996f',1,'Gui3D::Panel']]],
   ['setmaxlength',['setMaxLength',['../class_gui3_d_1_1_string_cursor_edit.html#adc734d71496f1b91065814e18eea53da',1,'Gui3D::StringCursorEdit']]],

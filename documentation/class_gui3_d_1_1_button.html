@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Gui3D
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.01</span>
    </div>
    <div id="projectbrief">Gui3D is a free library for OGRE3D that make you able to build 2D menu in a 3D environment, based on Gorilla, made by betajean.</div>
   </td>
@@ -171,8 +171,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>getActive</b> ()</td>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c5f595fc0f751ae098d9fbb2e0447d1"></a><!-- doxytag: member="Gui3D::Button::getPosition" ref="a7c5f595fc0f751ae098d9fbb2e0447d1" args="()" -->
 Ogre::Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_button.html#a7c5f595fc0f751ae098d9fbb2e0447d1">getPosition</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the element's position. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba76d77e18bd5421ab1b3a45436de63d"></a><!-- doxytag: member="Gui3D::Button::setBackgroundImage" ref="aba76d77e18bd5421ab1b3a45436de63d" args="(const Ogre::String &amp;overSpriteName, const Ogre::String &amp;notOverSpriteName, const Ogre::String &amp;inactiveSpriteName)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_button.html#aba76d77e18bd5421ab1b3a45436de63d">setBackgroundImage</a> (const Ogre::String &amp;overSpriteName, const Ogre::String &amp;notOverSpriteName, const Ogre::String &amp;inactiveSpriteName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb80d6e7fc0f952fa88ce545ddc3d1da"></a><!-- doxytag: member="Gui3D::Button::setBackgroundImage" ref="abb80d6e7fc0f952fa88ce545ddc3d1da" args="(const Ogre::String &amp;overSpriteName, const Ogre::String &amp;notOverSpriteName, const Ogre::String &amp;inactiveSpriteName, const Ogre::String &amp;clickedSpriteName)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_button.html#abb80d6e7fc0f952fa88ce545ddc3d1da">setBackgroundImage</a> (const Ogre::String &amp;overSpriteName, const Ogre::String &amp;notOverSpriteName, const Ogre::String &amp;inactiveSpriteName, const Ogre::String &amp;clickedSpriteName)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the over and not over background to a sprite from the texture atlas. note. The sprites will be set only if both are filled To remove the images pass on "none" or a empty string to at least one of sprite names. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -182,25 +182,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>_over</b> ()</td></tr
 void&#160;</td><td class="memItemRight" valign="bottom"><b>_unOver</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0913c14290702d7343273d0270d06712"></a><!-- doxytag: member="Gui3D::Button::_inactive" ref="a0913c14290702d7343273d0270d06712" args="()" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>_inactive</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24a351be39e8a811c323364c8989df51"></a><!-- doxytag: member="Gui3D::Button::_clicked" ref="a24a351be39e8a811c323364c8989df51" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_clicked</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1948d01593dd189638217fdb76e67904"></a><!-- doxytag: member="Gui3D::Button::_actualize" ref="a1948d01593dd189638217fdb76e67904" args="()" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_button.html#a1948d01593dd189638217fdb76e67904">_actualize</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal Use. Actualize the design of the element depending of its state. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa28576146602923cb1f009f4a9ee6f12"></a><!-- doxytag: member="Gui3D::Button::mIsActive" ref="aa28576146602923cb1f009f4a9ee6f12" args="" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>mIsActive</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_button.html#aa28576146602923cb1f009f4a9ee6f12">mIsActive</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The button can be clicked. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55bfdbb459dfeacf2bea3ecd17bda363"></a><!-- doxytag: member="Gui3D::Button::mIsClicked" ref="a55bfdbb459dfeacf2bea3ecd17bda363" args="" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_button.html#a55bfdbb459dfeacf2bea3ecd17bda363">mIsClicked</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The button is currently clicked. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83df05155d4f578e08c10d65c51b2c0f"></a><!-- doxytag: member="Gui3D::Button::mOverSpriteName" ref="a83df05155d4f578e08c10d65c51b2c0f" args="" -->
 Ogre::String&#160;</td><td class="memItemRight" valign="bottom"><b>mOverSpriteName</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a837aca71913b81bf1296db537ba73b65"></a><!-- doxytag: member="Gui3D::Button::mNotOverSpriteName" ref="a837aca71913b81bf1296db537ba73b65" args="" -->
 Ogre::String&#160;</td><td class="memItemRight" valign="bottom"><b>mNotOverSpriteName</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa6beaf0e6ed4fb8fd8c070930695c0a"></a><!-- doxytag: member="Gui3D::Button::mInactiveSpriteName" ref="afa6beaf0e6ed4fb8fd8c070930695c0a" args="" -->
 Ogre::String&#160;</td><td class="memItemRight" valign="bottom"><b>mInactiveSpriteName</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a297b69d3352894e42f7e8a7b4202d0b8"></a><!-- doxytag: member="Gui3D::Button::mClickedSpriteName" ref="a297b69d3352894e42f7e8a7b4202d0b8" args="" -->
+Ogre::String&#160;</td><td class="memItemRight" valign="bottom"><b>mClickedSpriteName</b></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>class. <a class="el" href="class_gui3_d_1_1_button.html">Button</a> desc. A <a class="el" href="class_gui3_d_1_1_button.html">Button</a>. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Valentin/Desktop/Gui3D/<a class="el" href="_gui3_d_button_8h_source.html">Gui3DButton.h</a></li>
-<li>C:/Users/Valentin/Desktop/Gui3D/Gui3DButton.cpp</li>
+<li>srcGui3D1.01/<a class="el" href="_gui3_d_button_8h_source.html">Gui3DButton.h</a></li>
+<li>srcGui3D1.01/Gui3DButton.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- window showing the filter options -->
@@ -220,7 +228,7 @@ Ogre::String&#160;</td><td class="memItemRight" valign="bottom"><b>mInactiveSpri
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 8 2012 16:11:55 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 1 2012 16:57:54 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Gui3D
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.01</span>
    </div>
    <div id="projectbrief">Gui3D is a free library for OGRE3D that make you able to build 2D menu in a 3D environment, based on Gorilla, made by betajean.</div>
   </td>
@@ -92,6 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 This is the complete list of members for <a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a>, including all inherited members.<table>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_button.html#a1948d01593dd189638217fdb76e67904">_actualize</a>()</td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td><code> [protected, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_rectangle_designed.html#a55b85b4556b65c47caa9d34d49b423de">_clearRectangleDesign</a>()</td><td><a class="el" href="class_gui3_d_1_1_rectangle_designed.html">Gui3D::RectangleDesigned</a></td><td><code> [inline, protected]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>_clicked</b>() (defined in <a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a>)</td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>_inactive</b>() (defined in <a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a>)</td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>_over</b>() (defined in <a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a>)</td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>_unOver</b>() (defined in <a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a>)</td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td><code> [protected]</code></td></tr>
@@ -117,10 +118,12 @@ This is the complete list of members for <a class="el" href="class_gui3_d_1_1_bu
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_button.html#a5b24e89f19823414205455e9977de0b0">isOver</a>(const Ogre::Vector2 &amp;pos)</td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td><code> [virtual]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>mCallback</b> (defined in <a class="el" href="class_gui3_d_1_1_panel_element_callback.html">Gui3D::PanelElementCallback</a>)</td><td><a class="el" href="class_gui3_d_1_1_panel_element_callback.html">Gui3D::PanelElementCallback</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_captioned.html#aef69422f07fc34ef2a06ee3acdaead59">mCaption</a></td><td><a class="el" href="class_gui3_d_1_1_captioned.html">Gui3D::Captioned</a></td><td><code> [protected]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>mClickedSpriteName</b> (defined in <a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a>)</td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_rectangle_designed.html#a60704b620bf1605f2d803bd9b9cd0914">mDesign</a></td><td><a class="el" href="class_gui3_d_1_1_rectangle_designed.html">Gui3D::RectangleDesigned</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>mHasFocus</b> (defined in <a class="el" href="class_gui3_d_1_1_panel_element.html">Gui3D::PanelElement</a>)</td><td><a class="el" href="class_gui3_d_1_1_panel_element.html">Gui3D::PanelElement</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>mInactiveSpriteName</b> (defined in <a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a>)</td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td><code> [protected]</code></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>mIsActive</b> (defined in <a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a>)</td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_button.html#aa28576146602923cb1f009f4a9ee6f12">mIsActive</a></td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_button.html#a55bfdbb459dfeacf2bea3ecd17bda363">mIsClicked</a></td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>mNotOverSpriteName</b> (defined in <a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a>)</td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>mOvered</b> (defined in <a class="el" href="class_gui3_d_1_1_panel_element.html">Gui3D::PanelElement</a>)</td><td><a class="el" href="class_gui3_d_1_1_panel_element.html">Gui3D::PanelElement</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>mOverSpriteName</b> (defined in <a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a>)</td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td><code> [protected]</code></td></tr>
@@ -129,7 +132,7 @@ This is the complete list of members for <a class="el" href="class_gui3_d_1_1_bu
   <tr bgcolor="#f0f0f0"><td><b>PanelElementCallback</b>(Container *parentContainer) (defined in <a class="el" href="class_gui3_d_1_1_panel_element_callback.html">Gui3D::PanelElementCallback</a>)</td><td><a class="el" href="class_gui3_d_1_1_panel_element_callback.html">Gui3D::PanelElementCallback</a></td><td><code> [inline]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>RectangleDesigned</b>() (defined in <a class="el" href="class_gui3_d_1_1_rectangle_designed.html">Gui3D::RectangleDesigned</a>)</td><td><a class="el" href="class_gui3_d_1_1_rectangle_designed.html">Gui3D::RectangleDesigned</a></td><td><code> [inline]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>setActive</b>(bool active) (defined in <a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a>)</td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_button.html#aba76d77e18bd5421ab1b3a45436de63d">setBackgroundImage</a>(const Ogre::String &amp;overSpriteName, const Ogre::String &amp;notOverSpriteName, const Ogre::String &amp;inactiveSpriteName)</td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_button.html#abb80d6e7fc0f952fa88ce545ddc3d1da">setBackgroundImage</a>(const Ogre::String &amp;overSpriteName, const Ogre::String &amp;notOverSpriteName, const Ogre::String &amp;inactiveSpriteName, const Ogre::String &amp;clickedSpriteName)</td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_panel_element.html#af3c2b2f6e06ffaf39e0916e1478af9f0">setFocus</a>(bool hasFocus)</td><td><a class="el" href="class_gui3_d_1_1_panel_element.html">Gui3D::PanelElement</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_panel_element.html#a24c28e10880687a61635dbdb696940fb">setOvered</a>(bool overed)</td><td><a class="el" href="class_gui3_d_1_1_panel_element.html">Gui3D::PanelElement</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_button.html#a56f845bfce4cce83c8a55545919c4cb6">setPosition</a>(int left, int top)</td><td><a class="el" href="class_gui3_d_1_1_button.html">Gui3D::Button</a></td><td><code> [virtual]</code></td></tr>
@@ -159,7 +162,7 @@ This is the complete list of members for <a class="el" href="class_gui3_d_1_1_bu
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 8 2012 16:11:55 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 1 2012 16:57:54 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

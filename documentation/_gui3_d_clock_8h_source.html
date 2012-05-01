@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Gui3D
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.01</span>
    </div>
    <div id="projectbrief">Gui3D is a free library for OGRE3D that make you able to build 2D menu in a 3D environment, based on Gorilla, made by betajean.</div>
   </td>
@@ -105,42 +105,44 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00023"></a>00023 <span class="comment">        THE SOFTWARE.</span>
 <a name="l00024"></a>00024 <span class="comment">*/</span>
 <a name="l00025"></a>00025 
-<a name="l00026"></a>00026 <span class="preprocessor">#ifndef Gui3DClock_H</span>
-<a name="l00027"></a>00027 <span class="preprocessor"></span><span class="preprocessor">#define Gui3DClock_H</span>
-<a name="l00028"></a>00028 <span class="preprocessor"></span>
-<a name="l00029"></a>00029 
-<a name="l00030"></a>00030 
-<a name="l00031"></a>00031 <span class="keyword">namespace </span>Gui3D
-<a name="l00032"></a>00032 {
-<a name="l00033"></a>00033 
-<a name="l00038"></a><a class="code" href="class_gui3_d_1_1_clock.html">00038</a> <span class="keyword">class </span><a class="code" href="class_gui3_d_1_1_clock.html">Clock</a>
-<a name="l00039"></a>00039 {
-<a name="l00040"></a>00040 <span class="keyword">public</span>:
-<a name="l00041"></a>00041         <a class="code" href="class_gui3_d_1_1_clock.html">Clock</a>();
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043         ~<a class="code" href="class_gui3_d_1_1_clock.html">Clock</a>();
-<a name="l00044"></a>00044         
-<a name="l00045"></a>00045         <span class="keywordtype">void</span> addTime(<span class="keywordtype">double</span> timeSinceLastFrame);
+<a name="l00026"></a>00026 <span class="comment">// TODO : Ogre::Timer...</span>
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 <span class="preprocessor">#ifndef Gui3DClock_H</span>
+<a name="l00029"></a>00029 <span class="preprocessor"></span><span class="preprocessor">#define Gui3DClock_H</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span>
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 <span class="keyword">namespace </span>Gui3D
+<a name="l00034"></a>00034 {
+<a name="l00035"></a>00035 
+<a name="l00040"></a><a class="code" href="class_gui3_d_1_1_clock.html">00040</a> <span class="keyword">class </span><a class="code" href="class_gui3_d_1_1_clock.html">Clock</a>
+<a name="l00041"></a>00041 {
+<a name="l00042"></a>00042 <span class="keyword">public</span>:
+<a name="l00043"></a>00043         <a class="code" href="class_gui3_d_1_1_clock.html">Clock</a>();
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045         ~<a class="code" href="class_gui3_d_1_1_clock.html">Clock</a>();
 <a name="l00046"></a>00046         
-<a name="l00047"></a>00047         <span class="keywordtype">double</span> getTimeSec();
+<a name="l00047"></a>00047         <span class="keywordtype">void</span> addTime(<span class="keywordtype">double</span> timeSinceLastFrame);
 <a name="l00048"></a>00048         
-<a name="l00049"></a>00049         <span class="keywordtype">int</span> getTimeMin();
+<a name="l00049"></a>00049         <span class="keywordtype">double</span> getTimeSec();
 <a name="l00050"></a>00050         
-<a name="l00051"></a>00051         <span class="keywordtype">int</span> getTimeHours();
+<a name="l00051"></a>00051         <span class="keywordtype">int</span> getTimeMin();
 <a name="l00052"></a>00052         
-<a name="l00055"></a>00055         <span class="keywordtype">bool</span> <a class="code" href="class_gui3_d_1_1_clock.html#a17f59bad03533f98fbd57f8363cda268" title="Perform an action every timeInSec seconds.">clockAction</a>(<span class="keywordtype">double</span> timeInSec, <span class="keywordtype">double</span> timeSinceLastFrame);
-<a name="l00056"></a>00056         
-<a name="l00059"></a>00059         <span class="keywordtype">void</span> <a class="code" href="class_gui3_d_1_1_clock.html#a0ef3a0ae324e29285155d402b05ade95" title="Reset the timer to zero.">reset</a>();
-<a name="l00060"></a>00060 
-<a name="l00061"></a>00061 <span class="keyword">protected</span>:
-<a name="l00062"></a>00062         <span class="keywordtype">double</span> mTimeSec;
-<a name="l00063"></a>00063         
-<a name="l00064"></a><a class="code" href="class_gui3_d_1_1_clock.html#a0619bcc27a7c62c4879a497d04dd897d">00064</a>         <span class="keywordtype">double</span> <a class="code" href="class_gui3_d_1_1_clock.html#a0619bcc27a7c62c4879a497d04dd897d" title="Used to manage timer action.">actionTimerSec</a>; 
-<a name="l00065"></a>00065 };
-<a name="l00066"></a>00066 
-<a name="l00067"></a>00067 }
+<a name="l00053"></a>00053         <span class="keywordtype">int</span> getTimeHours();
+<a name="l00054"></a>00054         
+<a name="l00057"></a>00057         <span class="keywordtype">bool</span> <a class="code" href="class_gui3_d_1_1_clock.html#a17f59bad03533f98fbd57f8363cda268" title="Perform an action every timeInSec seconds.">clockAction</a>(<span class="keywordtype">double</span> timeInSec, <span class="keywordtype">double</span> timeSinceLastFrame);
+<a name="l00058"></a>00058         
+<a name="l00061"></a>00061         <span class="keywordtype">void</span> <a class="code" href="class_gui3_d_1_1_clock.html#a0ef3a0ae324e29285155d402b05ade95" title="Reset the timer to zero.">reset</a>();
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063 <span class="keyword">protected</span>:
+<a name="l00064"></a>00064         <span class="keywordtype">double</span> mTimeSec;
+<a name="l00065"></a>00065         
+<a name="l00066"></a><a class="code" href="class_gui3_d_1_1_clock.html#a0619bcc27a7c62c4879a497d04dd897d">00066</a>         <span class="keywordtype">double</span> <a class="code" href="class_gui3_d_1_1_clock.html#a0619bcc27a7c62c4879a497d04dd897d" title="Used to manage timer action.">actionTimerSec</a>; 
+<a name="l00067"></a>00067 };
 <a name="l00068"></a>00068 
-<a name="l00069"></a>00069 <span class="preprocessor">#endif</span>
+<a name="l00069"></a>00069 }
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -159,7 +161,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 8 2012 16:11:54 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 1 2012 16:57:54 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

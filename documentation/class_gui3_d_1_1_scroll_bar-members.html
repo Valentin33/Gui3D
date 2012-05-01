@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Gui3D
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.01</span>
    </div>
    <div id="projectbrief">Gui3D is a free library for OGRE3D that make you able to build 2D menu in a 3D environment, based on Gorilla, made by betajean.</div>
   </td>
@@ -120,6 +120,7 @@ This is the complete list of members for <a class="el" href="class_gui3_d_1_1_sc
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html#a44682c051d7ed260cb31a581f16fd5aa">isOver</a>(const Ogre::Vector2 &amp;pos)</td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html#aa2669ce62ee8171e22b5db166a7665a0">mBar</a></td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>mCallback</b> (defined in <a class="el" href="class_gui3_d_1_1_panel_element_callback.html">Gui3D::PanelElementCallback</a>)</td><td><a class="el" href="class_gui3_d_1_1_panel_element_callback.html">Gui3D::PanelElementCallback</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html#ae1c46cc1461b232fedcbbbcc02fe17ac">mCallCallbackOnSelectingValue</a></td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_captioned.html#aef69422f07fc34ef2a06ee3acdaead59">mCaption</a></td><td><a class="el" href="class_gui3_d_1_1_captioned.html">Gui3D::Captioned</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html#ae18d5242d5d99ae9d201be476a383c40">mCursor</a></td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html#a9a878846cd1c46d6e81ad981b147f4e9">mCursorHeightPercent</a></td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td><code> [protected]</code></td></tr>
@@ -128,6 +129,7 @@ This is the complete list of members for <a class="el" href="class_gui3_d_1_1_sc
   <tr bgcolor="#f0f0f0"><td><b>mCursorSelectedSpriteName</b> (defined in <a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a>)</td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>mCursorWidthPercent</b> (defined in <a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a>)</td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_rectangle_designed.html#a60704b620bf1605f2d803bd9b9cd0914">mDesign</a></td><td><a class="el" href="class_gui3_d_1_1_rectangle_designed.html">Gui3D::RectangleDesigned</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html#acbf7a949970b3c500991b70275a9cafd">mDisplayValue</a></td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html#a0fd199a1294f32e595abd60d3f28c01f">mFixedValuePrecision</a></td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>mHasFocus</b> (defined in <a class="el" href="class_gui3_d_1_1_panel_element.html">Gui3D::PanelElement</a>)</td><td><a class="el" href="class_gui3_d_1_1_panel_element.html">Gui3D::PanelElement</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>mMaxValue</b> (defined in <a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a>)</td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td><code> [protected]</code></td></tr>
@@ -141,9 +143,11 @@ This is the complete list of members for <a class="el" href="class_gui3_d_1_1_sc
   <tr bgcolor="#f0f0f0"><td><b>PanelElementCallback</b>(Container *parentContainer) (defined in <a class="el" href="class_gui3_d_1_1_panel_element_callback.html">Gui3D::PanelElementCallback</a>)</td><td><a class="el" href="class_gui3_d_1_1_panel_element_callback.html">Gui3D::PanelElementCallback</a></td><td><code> [inline]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>RectangleDesigned</b>() (defined in <a class="el" href="class_gui3_d_1_1_rectangle_designed.html">Gui3D::RectangleDesigned</a>)</td><td><a class="el" href="class_gui3_d_1_1_rectangle_designed.html">Gui3D::RectangleDesigned</a></td><td><code> [inline]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>ScrollBar</b>(Ogre::Real x, Ogre::Real y, size_t width, size_t height, Ogre::Real minValue, Ogre::Real maxValue, Container *parentContainer) (defined in <a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a>)</td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html#a79eed05b5cf9cff64a21da9137e9d0aa">setCallCallbackOnSelectingValue</a>(bool callCallbackOnSelectingalue)</td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html#a7331215811a64198340db03a2aa64fd3">setCursorSprites</a>(const Ogre::String &amp;cursorOveredSpriteName, const Ogre::String &amp;cursorNotOveredSpriteName, const Ogre::String &amp;cursorSelectedOveredSpriteName)</td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html#afbf27cb24ccbfb9e1aeceeedee8dbb06">setCursorWidthHeightPercent</a>(Ogre::Real widthPercent, Ogre::Real heightPercent)</td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html#acd6e2243f9b5a15b6c683a3c509126b1">setDisplayedPrecision</a>(int precision, bool fixedValuePrecision)</td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html#aa8f11c2513b720867b28374c4ce90034">setDisplayValue</a>(bool displayValue)</td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_panel_element.html#af3c2b2f6e06ffaf39e0916e1478af9f0">setFocus</a>(bool hasFocus)</td><td><a class="el" href="class_gui3_d_1_1_panel_element.html">Gui3D::PanelElement</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>setMinMaxValue</b>(Ogre::Real min, Ogre::Real max) (defined in <a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a>)</td><td><a class="el" href="class_gui3_d_1_1_scroll_bar.html">Gui3D::ScrollBar</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="class_gui3_d_1_1_panel_element.html#a24c28e10880687a61635dbdb696940fb">setOvered</a>(bool overed)</td><td><a class="el" href="class_gui3_d_1_1_panel_element.html">Gui3D::PanelElement</a></td><td></td></tr>
@@ -175,7 +179,7 @@ This is the complete list of members for <a class="el" href="class_gui3_d_1_1_sc
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 8 2012 16:11:56 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 1 2012 16:57:56 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

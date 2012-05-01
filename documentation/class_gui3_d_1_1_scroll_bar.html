@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Gui3D
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.01</span>
    </div>
    <div id="projectbrief">Gui3D is a free library for OGRE3D that make you able to build 2D menu in a 3D environment, based on Gorilla, made by betajean.</div>
   </td>
@@ -170,6 +170,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd6e2243f9b5a15b6c683a3c509126b1"></a><!-- doxytag: member="Gui3D::ScrollBar::setDisplayedPrecision" ref="acd6e2243f9b5a15b6c683a3c509126b1" args="(int precision, bool fixedValuePrecision)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_scroll_bar.html#acd6e2243f9b5a15b6c683a3c509126b1">setDisplayedPrecision</a> (int precision, bool fixedValuePrecision)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the displayed value precision. With  true, the displayed will be str &lt;&lt; fixed &lt;&lt; setprecision(precision) &lt;&lt; value; else, it will be str &lt;&lt; setprecision(precision) &lt;&lt; value;. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8f11c2513b720867b28374c4ce90034"></a><!-- doxytag: member="Gui3D::ScrollBar::setDisplayValue" ref="aa8f11c2513b720867b28374c4ce90034" args="(bool displayValue)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_scroll_bar.html#aa8f11c2513b720867b28374c4ce90034">setDisplayValue</a> (bool displayValue)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if the value should be displayed on the widget. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbf27cb24ccbfb9e1aeceeedee8dbb06"></a><!-- doxytag: member="Gui3D::ScrollBar::setCursorWidthHeightPercent" ref="afbf27cb24ccbfb9e1aeceeedee8dbb06" args="(Ogre::Real widthPercent, Ogre::Real heightPercent)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_scroll_bar.html#afbf27cb24ccbfb9e1aeceeedee8dbb06">setCursorWidthHeightPercent</a> (Ogre::Real widthPercent, Ogre::Real heightPercent)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cursor width and height depending on the element width and height. <br/></td></tr>
@@ -183,6 +186,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7331215811a64198340db03a2aa64fd3"></a><!-- doxytag: member="Gui3D::ScrollBar::setCursorSprites" ref="a7331215811a64198340db03a2aa64fd3" args="(const Ogre::String &amp;cursorOveredSpriteName, const Ogre::String &amp;cursorNotOveredSpriteName, const Ogre::String &amp;cursorSelectedOveredSpriteName)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_scroll_bar.html#a7331215811a64198340db03a2aa64fd3">setCursorSprites</a> (const Ogre::String &amp;cursorOveredSpriteName, const Ogre::String &amp;cursorNotOveredSpriteName, const Ogre::String &amp;cursorSelectedOveredSpriteName)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the backgrounds images of the cursor from the texture atlas. note. To remove the images pass on "none" or a empty string to at least one parameter. <a class="el" href="class_gui3_d_1_1_panel.html">Panel</a> Colors will then be used. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79eed05b5cf9cff64a21da9137e9d0aa"></a><!-- doxytag: member="Gui3D::ScrollBar::setCallCallbackOnSelectingValue" ref="a79eed05b5cf9cff64a21da9137e9d0aa" args="(bool callCallbackOnSelectingalue)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_scroll_bar.html#a79eed05b5cf9cff64a21da9137e9d0aa">setCallCallbackOnSelectingValue</a> (bool callCallbackOnSelectingalue)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if the callback function should be called even when the user is selecting the value (not only when he released the mouse) <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f7b6e6930da2b1622ea3524c5025229"></a><!-- doxytag: member="Gui3D::ScrollBar::_unOverCursor" ref="a5f7b6e6930da2b1622ea3524c5025229" args="()" -->
@@ -227,6 +233,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fd199a1294f32e595abd60d3f28c01f"></a><!-- doxytag: member="Gui3D::ScrollBar::mFixedValuePrecision" ref="a0fd199a1294f32e595abd60d3f28c01f" args="" -->
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_scroll_bar.html#a0fd199a1294f32e595abd60d3f28c01f">mFixedValuePrecision</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed point notation for the value inside the scrollbar. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbf7a949970b3c500991b70275a9cafd"></a><!-- doxytag: member="Gui3D::ScrollBar::mDisplayValue" ref="acbf7a949970b3c500991b70275a9cafd" args="" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_scroll_bar.html#acbf7a949970b3c500991b70275a9cafd">mDisplayValue</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the value of the scrollbar. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1c46cc1461b232fedcbbbcc02fe17ac"></a><!-- doxytag: member="Gui3D::ScrollBar::mCallCallbackOnSelectingValue" ref="ae1c46cc1461b232fedcbbbcc02fe17ac" args="" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_scroll_bar.html#ae1c46cc1461b232fedcbbbcc02fe17ac">mCallCallbackOnSelectingValue</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the callback when selecting the value. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae18d5242d5d99ae9d201be476a383c40"></a><!-- doxytag: member="Gui3D::ScrollBar::mCursor" ref="ae18d5242d5d99ae9d201be476a383c40" args="" -->
 Gorilla::Rectangle *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_scroll_bar.html#ae18d5242d5d99ae9d201be476a383c40">mCursor</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The movable cursor of the scrollbar. <br/></td></tr>
@@ -260,8 +272,8 @@ Ogre::String&#160;</td><td class="memItemRight" valign="bottom"><b>mCursorSelect
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Valentin/Desktop/Gui3D/<a class="el" href="_gui3_d_scroll_bar_8h_source.html">Gui3DScrollBar.h</a></li>
-<li>C:/Users/Valentin/Desktop/Gui3D/Gui3DScrollBar.cpp</li>
+<li>srcGui3D1.01/<a class="el" href="_gui3_d_scroll_bar_8h_source.html">Gui3DScrollBar.h</a></li>
+<li>srcGui3D1.01/Gui3DScrollBar.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- window showing the filter options -->
@@ -281,7 +293,7 @@ Ogre::String&#160;</td><td class="memItemRight" valign="bottom"><b>mCursorSelect
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 8 2012 16:11:56 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 1 2012 16:57:56 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Gui3D
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.01</span>
    </div>
    <div id="projectbrief">Gui3D is a free library for OGRE3D that make you able to build 2D menu in a 3D environment, based on Gorilla, made by betajean.</div>
   </td>
@@ -123,261 +123,314 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00052"></a>00052         {
 <a name="l00053"></a>00053                 <span class="comment">// NorthSouth gradient by default</span>
 <a name="l00054"></a>00054                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a> = Gorilla::Gradient_NorthSouth;
-<a name="l00055"></a>00055                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#acd966d19a1fe9e1aa81b673f2f00d22f" title="The gradient type of an overed button. If you want a single color, set the gradient to whatever type ...">buttonBackgroundOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
-<a name="l00056"></a>00056                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a83e65489257b40755d3184b4af514c82" title="The gradient type of a not overed button. If you want a single color, set the gradient to whatever ty...">buttonBackgroundNotOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
-<a name="l00057"></a>00057                 buttonBackgroundInactiveGradientType = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
-<a name="l00058"></a>00058 
-<a name="l00059"></a>00059                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a5e6e2a0d9b8f9e9e89b89e313c83371c" title="The gradient tye of an overed checkbox. If you want a single color, set the gradient to whatever type...">checkboxOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
-<a name="l00060"></a>00060                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1a6daeba9361e8042f82bca8ee6cf5b7" title="The gradient type of a not overed button. If you want a single color, set the gradient to whatever ty...">checkboxNotOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
-<a name="l00061"></a>00061 
-<a name="l00062"></a>00062                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a7427ce75dead140834c9ae0f85b78aeb" title="The gradient type of an overed combobox. If you want a single color, set the gradient to whatever typ...">comboboxBackgroundGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00055"></a>00055 
+<a name="l00056"></a>00056                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#adac769e14f5cbce7e746546c96c8cabc" title="The gradient type of an overed button. If you want a single color, set the gradient to whatever type ...">buttonBackgroundClickedGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00057"></a>00057                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#acd966d19a1fe9e1aa81b673f2f00d22f" title="The gradient type of an overed button. If you want a single color, set the gradient to whatever type ...">buttonBackgroundOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00058"></a>00058                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a83e65489257b40755d3184b4af514c82" title="The gradient type of a not overed button. If you want a single color, set the gradient to whatever ty...">buttonBackgroundNotOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00059"></a>00059                 buttonBackgroundInactiveGradientType = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00060"></a>00060 
+<a name="l00061"></a>00061                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a5e6e2a0d9b8f9e9e89b89e313c83371c" title="The gradient tye of an overed checkbox. If you want a single color, set the gradient to whatever type...">checkboxOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00062"></a>00062                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1a6daeba9361e8042f82bca8ee6cf5b7" title="The gradient type of a not overed button. If you want a single color, set the gradient to whatever ty...">checkboxNotOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
 <a name="l00063"></a>00063 
-<a name="l00064"></a>00064                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a37be558713c6617fe65447f86a147c02" title="The gradient type of an inline selector. If you want a single color, set the gradient to whatever typ...">inlineselectorBackgroundGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00064"></a>00064                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a7427ce75dead140834c9ae0f85b78aeb" title="The gradient type of an overed combobox. If you want a single color, set the gradient to whatever typ...">comboboxBackgroundGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
 <a name="l00065"></a>00065 
-<a name="l00066"></a>00066                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a024397526621949c8cf14c24879a1beb" title="The gradient type of an overed combobox. If you want a single color, set the gradient to whatever typ...">listboxBackgroundGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00066"></a>00066                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a37be558713c6617fe65447f86a147c02" title="The gradient type of an inline selector. If you want a single color, set the gradient to whatever typ...">inlineselectorBackgroundGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
 <a name="l00067"></a>00067 
-<a name="l00068"></a>00068                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a76a4365b73876141cc598cef2d0bbd7b" title="The gradient type of a scrollbar background. If you want a single color, set the gradient to whatever...">scrollbarBackgroundGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
-<a name="l00069"></a>00069                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a91e6409bce5f775895a566cad185c4bf" title="The gradient type of a scrollbar bar. If you want a single color, set the gradient to whatever type y...">scrollbarProgressbarGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
-<a name="l00070"></a>00070                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0d5f89948c72ffdcd134890d2eefe3ca" title="The gradient type of a scrollbar overed cursor. If you want a single color, set the gradient to whate...">scrollbarCursorOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
-<a name="l00071"></a>00071                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#acef6bb9da49e53ba0a3583ee3979e90b" title="The gradient type of a scrollbar not overed cursor. If you want a single color, set the gradient to w...">scrollbarCursorNotOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
-<a name="l00072"></a>00072                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa7e5fd5e18842f6c9aef07719c0f188a" title="The gradient type of a scrollbar selected cursor. If you want a single color, set the gradient to wha...">scrollbarCursorSelectedGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
-<a name="l00073"></a>00073 
-<a name="l00074"></a>00074                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a48c1ccc8b1d2c8d21c96dfe537fa9aff" title="The gradient type of a overed textzone. If you want a single color, set the gradient to whatever type...">textzoneBackgroundOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
-<a name="l00075"></a>00075                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#abe0b7e126a17aa5450e30d4c2358e599" title="The gradient type of a not overed textzone. If you want a single color, set the gradient to whatever ...">textzoneBackgroundNotOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
-<a name="l00076"></a>00076                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6cd06ded7b0b9245772ef5d71dcdf37a" title="The gradient type of a selected textzone. If you want a single color, set the gradient to whatever ty...">textzoneBackgroundSelectedGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
-<a name="l00077"></a>00077 
-<a name="l00078"></a>00078                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a934caaab1c4af712eedf2b1abbfcf2b5" title="The gradient type of a caption. If you want a single color, set the gradient to whatever type you wan...">captionBackgroundGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00068"></a>00068                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a024397526621949c8cf14c24879a1beb" title="The gradient type of an overed combobox. If you want a single color, set the gradient to whatever typ...">listboxBackgroundGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a76a4365b73876141cc598cef2d0bbd7b" title="The gradient type of a scrollbar background. If you want a single color, set the gradient to whatever...">scrollbarBackgroundGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00071"></a>00071                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a91e6409bce5f775895a566cad185c4bf" title="The gradient type of a scrollbar bar. If you want a single color, set the gradient to whatever type y...">scrollbarProgressbarGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00072"></a>00072                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0d5f89948c72ffdcd134890d2eefe3ca" title="The gradient type of a scrollbar overed cursor. If you want a single color, set the gradient to whate...">scrollbarCursorOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00073"></a>00073                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#acef6bb9da49e53ba0a3583ee3979e90b" title="The gradient type of a scrollbar not overed cursor. If you want a single color, set the gradient to w...">scrollbarCursorNotOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00074"></a>00074                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa7e5fd5e18842f6c9aef07719c0f188a" title="The gradient type of a scrollbar selected cursor. If you want a single color, set the gradient to wha...">scrollbarCursorSelectedGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a48c1ccc8b1d2c8d21c96dfe537fa9aff" title="The gradient type of a overed textzone. If you want a single color, set the gradient to whatever type...">textzoneBackgroundOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00077"></a>00077                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#abe0b7e126a17aa5450e30d4c2358e599" title="The gradient type of a not overed textzone. If you want a single color, set the gradient to whatever ...">textzoneBackgroundNotOveredGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00078"></a>00078                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6cd06ded7b0b9245772ef5d71dcdf37a" title="The gradient type of a selected textzone. If you want a single color, set the gradient to whatever ty...">textzoneBackgroundSelectedGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
 <a name="l00079"></a>00079 
-<a name="l00080"></a>00080                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#acfd4fd259771668d1b7cb18e46b53cb1" title="The gradient type of a progressbar background. If you want a single color, set the gradient to whatev...">progressbarBackgroundGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
-<a name="l00081"></a>00081                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a477b20843e9cd98de036d27c83a7d969" title="The gradient type of a progressbar loadingbar background. If you want a single color, set the gradient to whatever type you want and the same colors for gradientStart and gradientEnd.">progressbarLoadingBarGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
-<a name="l00082"></a>00082         }
-<a name="l00083"></a>00083 
-<a name="l00084"></a>00084         <span class="comment">// General</span>
-<a name="l00085"></a>00085         Ogre::ColourValue transparent;
-<a name="l00086"></a>00086 
-<a name="l00087"></a>00087         <span class="comment">// Panel</span>
-<a name="l00088"></a>00088         Ogre::String panelBackgroundSpriteName;
-<a name="l00089"></a>00089 
-<a name="l00090"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c">00090</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>; 
-<a name="l00091"></a>00091         Ogre::ColourValue panelGradientColorStart; 
-<a name="l00092"></a>00092         Ogre::ColourValue panelGradientColorEnd;
-<a name="l00093"></a>00093         
-<a name="l00094"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aedad95f863c35036805de651e0b402d5">00094</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aedad95f863c35036805de651e0b402d5" title="The border colour of a panel.">panelBorder</a>; 
-<a name="l00095"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ac2b4dc1fad0030d35b838f1daa39c608">00095</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ac2b4dc1fad0030d35b838f1daa39c608" title="The border size of a panel.">panelBorderSize</a>; 
-<a name="l00096"></a>00096 
-<a name="l00097"></a>00097 
-<a name="l00103"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aff5289854fad67ad1c6a124fd926744b">00103</a>         Ogre::String <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aff5289854fad67ad1c6a124fd926744b">buttonOveredSpriteName</a>;
-<a name="l00104"></a>00104         Ogre::String buttonNotOveredSpriteName;
-<a name="l00105"></a>00105         Ogre::String buttonInactiveSpriteName;
-<a name="l00106"></a>00106 
-<a name="l00107"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#acd966d19a1fe9e1aa81b673f2f00d22f">00107</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#acd966d19a1fe9e1aa81b673f2f00d22f" title="The gradient type of an overed button. If you want a single color, set the gradient to whatever type ...">buttonBackgroundOveredGradientType</a>; 
-<a name="l00108"></a>00108         Ogre::ColourValue buttonBackgroundOveredGradientStart;
-<a name="l00109"></a>00109         Ogre::ColourValue buttonBackgroundOveredGradientEnd;
-<a name="l00110"></a>00110 
-<a name="l00111"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a83e65489257b40755d3184b4af514c82">00111</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a83e65489257b40755d3184b4af514c82" title="The gradient type of a not overed button. If you want a single color, set the gradient to whatever ty...">buttonBackgroundNotOveredGradientType</a>; 
-<a name="l00112"></a>00112         Ogre::ColourValue buttonBackgroundNotOveredGradientStart;
-<a name="l00113"></a>00113         Ogre::ColourValue buttonBackgroundNotOveredGradientEnd;
+<a name="l00080"></a>00080                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a934caaab1c4af712eedf2b1abbfcf2b5" title="The gradient type of a caption. If you want a single color, set the gradient to whatever type you wan...">captionBackgroundGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00081"></a>00081 
+<a name="l00082"></a>00082                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#acfd4fd259771668d1b7cb18e46b53cb1" title="The gradient type of a progressbar background. If you want a single color, set the gradient to whatev...">progressbarBackgroundGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00083"></a>00083                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a477b20843e9cd98de036d27c83a7d969" title="The gradient type of a progressbar loadingbar background. If you want a single color, set the gradient to whatever type you want and the same colors for gradientStart and gradientEnd.">progressbarLoadingBarGradientType</a> = <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>;
+<a name="l00084"></a>00084 
+<a name="l00085"></a>00085 
+<a name="l00086"></a>00086                 <span class="comment">// Init border sizes</span>
+<a name="l00087"></a>00087                 <span class="keywordtype">size_t</span> defaultBorderSize = 0;
+<a name="l00088"></a>00088                 
+<a name="l00089"></a>00089                 panelCursorSpriteSizeX = defaultBorderSize;
+<a name="l00090"></a>00090                 panelCursorSpriteSizeY = defaultBorderSize;
+<a name="l00091"></a>00091                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ac2b4dc1fad0030d35b838f1daa39c608" title="The border size of a panel.">panelBorderSize</a> = defaultBorderSize;
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093                 buttonTextSize = defaultBorderSize;
+<a name="l00094"></a>00094                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0dcf3b99b1dad48ec459a5a04c9924fd" title="The border size of a button.">buttonBorderSize</a> = defaultBorderSize;
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096                 checkboxTextSize = defaultBorderSize;
+<a name="l00097"></a>00097                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a4540d3d729da976b4a113c10f174b553" title="The border size of a checkbox.">checkboxBorderSize</a> = defaultBorderSize;
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099                 comboboxTextSize = defaultBorderSize;
+<a name="l00100"></a>00100                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aff85e221e1d05dacb07cc9d63465736f" title="The border size of a combobox.">comboboxBorderSize</a> = defaultBorderSize;
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102                 inlineselectorTextSize = defaultBorderSize;
+<a name="l00103"></a>00103                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a789849a3a3fe5bb5b9c8aa74a01f20d8" title="The border size of an inline selector.">inlineselectorBorderSize</a> = defaultBorderSize;
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105                 listboxTextSize = defaultBorderSize;
+<a name="l00106"></a>00106                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0a3d02f9cc961f2f26eda7b6e8913285" title="The border size of a combobox.">listboxBorderSize</a> = defaultBorderSize;
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108                 scrollbarTextSize = defaultBorderSize;
+<a name="l00109"></a>00109                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aafba162ee2d640f140f1047a2388eeaa" title="The border size of a scrollbar.">scrollbarBorderSize</a> = defaultBorderSize;
+<a name="l00110"></a>00110                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa1f0b49597f8cb0072e1e91bb9766cea" title="The border size of a cursor scrollbar.">scrollbarCursorBorderSize</a> = defaultBorderSize;
+<a name="l00111"></a>00111 
+<a name="l00112"></a>00112                 textzoneTextSize = defaultBorderSize;
+<a name="l00113"></a>00113                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a102f7946146f10bfe5c1f9d95ac82694" title="The border size of a textzone.">textzoneBorderSize</a> = defaultBorderSize;
 <a name="l00114"></a>00114 
-<a name="l00115"></a>00115         Gorilla::Gradient buttonBackgroundInactiveGradientType;
-<a name="l00116"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#accc092a70f4da83652603373480a9cb7">00116</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#accc092a70f4da83652603373480a9cb7" title="The gradient type of an inactive hovered button. If you want a single color, set the gradient to what...">buttonBackgroundInactiveGradientStart</a>; 
-<a name="l00117"></a>00117         Ogre::ColourValue buttonBackgroundInactiveGradientEnd;
-<a name="l00118"></a>00118         
-<a name="l00119"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a5adac1c6cd0582c692b3075b7c1557aa">00119</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a5adac1c6cd0582c692b3075b7c1557aa" title="The text colour of a button.">buttonText</a>; 
-<a name="l00120"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a44ff317fb1dd0fb9188f93d08e1458bd">00120</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a44ff317fb1dd0fb9188f93d08e1458bd" title="The text colour of an inactive button.">buttonTextInactive</a>; 
-<a name="l00121"></a>00121         <span class="keywordtype">size_t</span> buttonTextSize;
-<a name="l00122"></a>00122 
-<a name="l00123"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#af2189b80dcfe4651434f949d0cdd2aa0">00123</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#af2189b80dcfe4651434f949d0cdd2aa0" title="The border colour of a button.">buttonBorder</a>; 
-<a name="l00124"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a94a204cec6980a944587833ad298743f">00124</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a94a204cec6980a944587833ad298743f" title="The border colour of a highlight button.">buttonBorderHighlight</a>; 
-<a name="l00125"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ae48a76a927c176a957d3d66aad5d524b">00125</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ae48a76a927c176a957d3d66aad5d524b" title="The border colour of an inactive button.">buttonBorderInactive</a>; 
-<a name="l00126"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0dcf3b99b1dad48ec459a5a04c9924fd">00126</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0dcf3b99b1dad48ec459a5a04c9924fd" title="The border size of a button.">buttonBorderSize</a>; 
+<a name="l00115"></a>00115                 captionTextSize = defaultBorderSize;
+<a name="l00116"></a>00116                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a74bdbe758ecaf10feaff6f82459602fb" title="The border size of a caption.">captionBorderSize</a> = defaultBorderSize;
+<a name="l00117"></a>00117 
+<a name="l00118"></a>00118                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ae5f053d765849d0278730c99f48789bb" title="The text colour of a caption.">progressbarTextSize</a> = defaultBorderSize;
+<a name="l00119"></a>00119                 <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1604468040c65849fefc82a35e164994" title="The border size of a progressbar.">progressbarBorderSize</a> = defaultBorderSize;
+<a name="l00120"></a>00120         }
+<a name="l00121"></a>00121 
+<a name="l00122"></a>00122         <span class="comment">// General</span>
+<a name="l00123"></a>00123         Ogre::ColourValue transparent;
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125         <span class="comment">// Panel</span>
+<a name="l00126"></a>00126         Ogre::String panelBackgroundSpriteName;
 <a name="l00127"></a>00127 
-<a name="l00128"></a>00128 
-<a name="l00134"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aba1acb3e769dbb6f6c62c6db84154c64">00134</a>         Ogre::String <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aba1acb3e769dbb6f6c62c6db84154c64">checkboxOveredBackgroundSpriteName</a>;
-<a name="l00135"></a>00135         Ogre::String checkboxNotOveredBackgroundSpriteName;
-<a name="l00136"></a>00136         Ogre::String checkboxCheckedNotOveredBackgroundSpriteName;
-<a name="l00137"></a>00137         Ogre::String checkboxCheckedOveredBackgroundSpriteName;
+<a name="l00128"></a>00128         Ogre::String panelCursorSpriteName;
+<a name="l00129"></a>00129         <span class="keywordtype">size_t</span> panelCursorSpriteSizeX;
+<a name="l00130"></a>00130         <span class="keywordtype">size_t</span> panelCursorSpriteSizeY;
+<a name="l00131"></a>00131 
+<a name="l00132"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c">00132</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a188a6a89c3001b036391bb918ffdbb3c" title="The gradient type of a panel. If you want a single color, set the gradient to whatever type you want ...">panelGradientType</a>; 
+<a name="l00133"></a>00133         Ogre::ColourValue panelGradientColorStart; 
+<a name="l00134"></a>00134         Ogre::ColourValue panelGradientColorEnd;
+<a name="l00135"></a>00135         
+<a name="l00136"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aedad95f863c35036805de651e0b402d5">00136</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aedad95f863c35036805de651e0b402d5" title="The border colour of a panel.">panelBorder</a>; 
+<a name="l00137"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ac2b4dc1fad0030d35b838f1daa39c608">00137</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ac2b4dc1fad0030d35b838f1daa39c608" title="The border size of a panel.">panelBorderSize</a>; 
 <a name="l00138"></a>00138 
-<a name="l00139"></a>00139         <span class="keywordtype">char</span> checkboxCheckedSymbol;
-<a name="l00140"></a>00140 
-<a name="l00141"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a5e6e2a0d9b8f9e9e89b89e313c83371c">00141</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a5e6e2a0d9b8f9e9e89b89e313c83371c" title="The gradient tye of an overed checkbox. If you want a single color, set the gradient to whatever type...">checkboxOveredGradientType</a>; 
-<a name="l00142"></a>00142         Ogre::ColourValue checkboxOveredGradientStart;
-<a name="l00143"></a>00143         Ogre::ColourValue checkboxOveredGradientEnd;
-<a name="l00144"></a>00144 
-<a name="l00145"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1a6daeba9361e8042f82bca8ee6cf5b7">00145</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1a6daeba9361e8042f82bca8ee6cf5b7" title="The gradient type of a not overed button. If you want a single color, set the gradient to whatever ty...">checkboxNotOveredGradientType</a>; 
-<a name="l00146"></a>00146         Ogre::ColourValue checkboxNotOveredGradientStart;
-<a name="l00147"></a>00147         Ogre::ColourValue checkboxNotOveredGradientEnd;
-<a name="l00148"></a>00148 
-<a name="l00149"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1ba401c5594baaeee36b4937e9bfa8a4">00149</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1ba401c5594baaeee36b4937e9bfa8a4" title="The gradient tye of an overed checkbox. If you want a single color, set the gradient to whatever type...">checkboxSelectedOveredGradientType</a>; 
-<a name="l00150"></a>00150         Ogre::ColourValue checkboxSelectedOveredGradientStart;
-<a name="l00151"></a>00151         Ogre::ColourValue checkboxSelectedOveredGradientEnd;
-<a name="l00152"></a>00152 
-<a name="l00153"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0f943d602ed6c275cb050e30405adf0f">00153</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0f943d602ed6c275cb050e30405adf0f" title="The gradient type of a not overed button. If you want a single color, set the gradient to whatever ty...">checkboxSelectedNotOveredGradientType</a>; 
-<a name="l00154"></a>00154         Ogre::ColourValue checkboxSelectedNotOveredGradientStart;
-<a name="l00155"></a>00155         Ogre::ColourValue checkboxSelectedNotOveredGradientEnd;
-<a name="l00156"></a>00156 
-<a name="l00157"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ac120ef1d9db4d6cb5d95e4afabc1a63b">00157</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ac120ef1d9db4d6cb5d95e4afabc1a63b" title="The text colour of a checked symbol of a checkbox.">checkboxText</a>; 
-<a name="l00158"></a>00158         <span class="keywordtype">size_t</span> checkboxTextSize;
-<a name="l00159"></a>00159 
-<a name="l00160"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a7d2c04e825b027b65776fadecb8890aa">00160</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a7d2c04e825b027b65776fadecb8890aa" title="The border colour of a checkbox.">checkboxBorder</a>; 
-<a name="l00161"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6c1d1913182ed38102c7f4e09679245a">00161</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6c1d1913182ed38102c7f4e09679245a" title="The border colour of a highlight checkbox.">checkboxBorderHighlight</a>; 
-<a name="l00162"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a4540d3d729da976b4a113c10f174b553">00162</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a4540d3d729da976b4a113c10f174b553" title="The border size of a checkbox.">checkboxBorderSize</a>; 
-<a name="l00163"></a>00163 
-<a name="l00164"></a>00164 
-<a name="l00170"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a594d788a3143378ffb933b215fb0ee1a">00170</a>         Ogre::String <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a594d788a3143378ffb933b215fb0ee1a">comboboxButtonPreviousOveredSpriteName</a>;
-<a name="l00171"></a>00171         Ogre::String comboboxButtonPreviousNotOveredSpriteName;
-<a name="l00172"></a>00172         Ogre::String comboboxButtonPreviousInactiveSpriteName;
-<a name="l00173"></a>00173 
-<a name="l00174"></a>00174         Ogre::String comboboxButtonNextOveredSpriteName;
-<a name="l00175"></a>00175         Ogre::String comboboxButtonNextNotOveredSpriteName;
-<a name="l00176"></a>00176         Ogre::String comboboxButtonNextInactiveSpriteName;
-<a name="l00177"></a>00177 
-<a name="l00178"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a7427ce75dead140834c9ae0f85b78aeb">00178</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a7427ce75dead140834c9ae0f85b78aeb" title="The gradient type of an overed combobox. If you want a single color, set the gradient to whatever typ...">comboboxBackgroundGradientType</a>; 
-<a name="l00179"></a>00179         Ogre::ColourValue comboboxBackgroundGradientStart;
-<a name="l00180"></a>00180         Ogre::ColourValue comboboxBackgroundGradientEnd;
-<a name="l00181"></a>00181 
-<a name="l00182"></a>00182         Ogre::ColourValue comboboxOveredElement;
-<a name="l00183"></a>00183         Ogre::ColourValue comboboxNotOveredElement;
-<a name="l00184"></a>00184         Ogre::ColourValue comboboxSelectedElement;
+<a name="l00139"></a>00139 
+<a name="l00145"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aff5289854fad67ad1c6a124fd926744b">00145</a>         Ogre::String <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aff5289854fad67ad1c6a124fd926744b">buttonOveredSpriteName</a>;
+<a name="l00146"></a>00146         Ogre::String buttonNotOveredSpriteName;
+<a name="l00147"></a>00147         Ogre::String buttonInactiveSpriteName;
+<a name="l00148"></a>00148         Ogre::String buttonClickedSpriteName;
+<a name="l00149"></a>00149 
+<a name="l00150"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#adac769e14f5cbce7e746546c96c8cabc">00150</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#adac769e14f5cbce7e746546c96c8cabc" title="The gradient type of an overed button. If you want a single color, set the gradient to whatever type ...">buttonBackgroundClickedGradientType</a>; 
+<a name="l00151"></a>00151         Ogre::ColourValue buttonBackgroundClickedGradientStart;
+<a name="l00152"></a>00152         Ogre::ColourValue buttonBackgroundClickedGradientEnd;
+<a name="l00153"></a>00153 
+<a name="l00154"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#acd966d19a1fe9e1aa81b673f2f00d22f">00154</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#acd966d19a1fe9e1aa81b673f2f00d22f" title="The gradient type of an overed button. If you want a single color, set the gradient to whatever type ...">buttonBackgroundOveredGradientType</a>; 
+<a name="l00155"></a>00155         Ogre::ColourValue buttonBackgroundOveredGradientStart;
+<a name="l00156"></a>00156         Ogre::ColourValue buttonBackgroundOveredGradientEnd;
+<a name="l00157"></a>00157 
+<a name="l00158"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a83e65489257b40755d3184b4af514c82">00158</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a83e65489257b40755d3184b4af514c82" title="The gradient type of a not overed button. If you want a single color, set the gradient to whatever ty...">buttonBackgroundNotOveredGradientType</a>; 
+<a name="l00159"></a>00159         Ogre::ColourValue buttonBackgroundNotOveredGradientStart;
+<a name="l00160"></a>00160         Ogre::ColourValue buttonBackgroundNotOveredGradientEnd;
+<a name="l00161"></a>00161 
+<a name="l00162"></a>00162         Gorilla::Gradient buttonBackgroundInactiveGradientType;
+<a name="l00163"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#accc092a70f4da83652603373480a9cb7">00163</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#accc092a70f4da83652603373480a9cb7" title="The gradient type of an inactive hovered button. If you want a single color, set the gradient to what...">buttonBackgroundInactiveGradientStart</a>; 
+<a name="l00164"></a>00164         Ogre::ColourValue buttonBackgroundInactiveGradientEnd;
+<a name="l00165"></a>00165         
+<a name="l00166"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a5adac1c6cd0582c692b3075b7c1557aa">00166</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a5adac1c6cd0582c692b3075b7c1557aa" title="The text colour of a button.">buttonText</a>; 
+<a name="l00167"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a44ff317fb1dd0fb9188f93d08e1458bd">00167</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a44ff317fb1dd0fb9188f93d08e1458bd" title="The text colour of an inactive button.">buttonTextInactive</a>; 
+<a name="l00168"></a>00168         <span class="keywordtype">size_t</span> buttonTextSize;
+<a name="l00169"></a>00169 
+<a name="l00170"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#af2189b80dcfe4651434f949d0cdd2aa0">00170</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#af2189b80dcfe4651434f949d0cdd2aa0" title="The border colour of a button.">buttonBorder</a>; 
+<a name="l00171"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a94a204cec6980a944587833ad298743f">00171</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a94a204cec6980a944587833ad298743f" title="The border colour of a highlight button.">buttonBorderHighlight</a>; 
+<a name="l00172"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ae48a76a927c176a957d3d66aad5d524b">00172</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ae48a76a927c176a957d3d66aad5d524b" title="The border colour of an inactive button.">buttonBorderInactive</a>; 
+<a name="l00173"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0dcf3b99b1dad48ec459a5a04c9924fd">00173</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0dcf3b99b1dad48ec459a5a04c9924fd" title="The border size of a button.">buttonBorderSize</a>; 
+<a name="l00174"></a>00174 
+<a name="l00175"></a>00175 
+<a name="l00181"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aba1acb3e769dbb6f6c62c6db84154c64">00181</a>         Ogre::String <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aba1acb3e769dbb6f6c62c6db84154c64">checkboxOveredBackgroundSpriteName</a>;
+<a name="l00182"></a>00182         Ogre::String checkboxNotOveredBackgroundSpriteName;
+<a name="l00183"></a>00183         Ogre::String checkboxCheckedNotOveredBackgroundSpriteName;
+<a name="l00184"></a>00184         Ogre::String checkboxCheckedOveredBackgroundSpriteName;
 <a name="l00185"></a>00185 
-<a name="l00186"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a9b4bb212c7eb556c8b8a2d6aed4e4ef1">00186</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a9b4bb212c7eb556c8b8a2d6aed4e4ef1" title="The text colour of combobox elements.">comboboxText</a>; 
-<a name="l00187"></a>00187         <span class="keywordtype">size_t</span> comboboxTextSize;
-<a name="l00188"></a>00188 
-<a name="l00189"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a10bac42ab01c549a2cc43438b16e094a">00189</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a10bac42ab01c549a2cc43438b16e094a" title="The border colour of a combobox.">comboboxBorder</a>; 
-<a name="l00190"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa3438f2fa2623058aa91da69a32a3a03">00190</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa3438f2fa2623058aa91da69a32a3a03" title="The border colour of a highlight combobox.">comboboxBorderHighlight</a>; 
-<a name="l00191"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aff85e221e1d05dacb07cc9d63465736f">00191</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aff85e221e1d05dacb07cc9d63465736f" title="The border size of a combobox.">comboboxBorderSize</a>; 
-<a name="l00192"></a>00192 
-<a name="l00193"></a>00193 
-<a name="l00199"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ad8a0b848ec236fdb5bfe2356a5fb98b1">00199</a>         Ogre::String <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ad8a0b848ec236fdb5bfe2356a5fb98b1">inlineselectorButtonPreviousOveredSpriteName</a>;
-<a name="l00200"></a>00200         Ogre::String inlineselectorButtonPreviousNotOveredSpriteName;
-<a name="l00201"></a>00201         Ogre::String inlineselectorButtonPreviousInactiveSpriteName;
-<a name="l00202"></a>00202 
-<a name="l00203"></a>00203         Ogre::String inlineselectorButtonNextOveredSpriteName;
-<a name="l00204"></a>00204         Ogre::String inlineselectorButtonNextNotOveredSpriteName;
-<a name="l00205"></a>00205         Ogre::String inlineselectorButtonNextInactiveSpriteName;
+<a name="l00186"></a>00186         <span class="keywordtype">char</span> checkboxCheckedSymbol;
+<a name="l00187"></a>00187 
+<a name="l00188"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a5e6e2a0d9b8f9e9e89b89e313c83371c">00188</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a5e6e2a0d9b8f9e9e89b89e313c83371c" title="The gradient tye of an overed checkbox. If you want a single color, set the gradient to whatever type...">checkboxOveredGradientType</a>; 
+<a name="l00189"></a>00189         Ogre::ColourValue checkboxOveredGradientStart;
+<a name="l00190"></a>00190         Ogre::ColourValue checkboxOveredGradientEnd;
+<a name="l00191"></a>00191 
+<a name="l00192"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1a6daeba9361e8042f82bca8ee6cf5b7">00192</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1a6daeba9361e8042f82bca8ee6cf5b7" title="The gradient type of a not overed button. If you want a single color, set the gradient to whatever ty...">checkboxNotOveredGradientType</a>; 
+<a name="l00193"></a>00193         Ogre::ColourValue checkboxNotOveredGradientStart;
+<a name="l00194"></a>00194         Ogre::ColourValue checkboxNotOveredGradientEnd;
+<a name="l00195"></a>00195 
+<a name="l00196"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1ba401c5594baaeee36b4937e9bfa8a4">00196</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1ba401c5594baaeee36b4937e9bfa8a4" title="The gradient tye of an overed checkbox. If you want a single color, set the gradient to whatever type...">checkboxSelectedOveredGradientType</a>; 
+<a name="l00197"></a>00197         Ogre::ColourValue checkboxSelectedOveredGradientStart;
+<a name="l00198"></a>00198         Ogre::ColourValue checkboxSelectedOveredGradientEnd;
+<a name="l00199"></a>00199 
+<a name="l00200"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0f943d602ed6c275cb050e30405adf0f">00200</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0f943d602ed6c275cb050e30405adf0f" title="The gradient type of a not overed button. If you want a single color, set the gradient to whatever ty...">checkboxSelectedNotOveredGradientType</a>; 
+<a name="l00201"></a>00201         Ogre::ColourValue checkboxSelectedNotOveredGradientStart;
+<a name="l00202"></a>00202         Ogre::ColourValue checkboxSelectedNotOveredGradientEnd;
+<a name="l00203"></a>00203 
+<a name="l00204"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ac120ef1d9db4d6cb5d95e4afabc1a63b">00204</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ac120ef1d9db4d6cb5d95e4afabc1a63b" title="The text colour of a checked symbol of a checkbox.">checkboxText</a>; 
+<a name="l00205"></a>00205         <span class="keywordtype">size_t</span> checkboxTextSize;
 <a name="l00206"></a>00206 
-<a name="l00207"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a37be558713c6617fe65447f86a147c02">00207</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a37be558713c6617fe65447f86a147c02" title="The gradient type of an inline selector. If you want a single color, set the gradient to whatever typ...">inlineselectorBackgroundGradientType</a>; 
-<a name="l00208"></a>00208         Ogre::ColourValue inlineselectorBackgroundGradientStart;
-<a name="l00209"></a>00209         Ogre::ColourValue inlineselectorBackgroundGradientEnd;
-<a name="l00210"></a>00210         
-<a name="l00211"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a138ac0878c98df3942fb4c49a6c8d1f6">00211</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a138ac0878c98df3942fb4c49a6c8d1f6" title="The text colour of an inline selector.">inlineselectorText</a>; 
-<a name="l00212"></a>00212         <span class="keywordtype">size_t</span> inlineselectorTextSize;
-<a name="l00213"></a>00213 
-<a name="l00214"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a75e033d7d2daa565accbce5a0113bc06">00214</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a75e033d7d2daa565accbce5a0113bc06" title="The border colour of an inline selector.">inlineselectorBorder</a>; 
-<a name="l00215"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a8e075dad05d0f261e884885b3338bffa">00215</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a8e075dad05d0f261e884885b3338bffa" title="The border colour of a highlight inline selector.">inlineselectorBorderHighlight</a>; 
-<a name="l00216"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a789849a3a3fe5bb5b9c8aa74a01f20d8">00216</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a789849a3a3fe5bb5b9c8aa74a01f20d8" title="The border size of an inline selector.">inlineselectorBorderSize</a>; 
-<a name="l00217"></a>00217 
-<a name="l00218"></a>00218 
-<a name="l00224"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a14f510ab6ae00c0ff3c81fdd04db6d83">00224</a>         Ogre::String <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a14f510ab6ae00c0ff3c81fdd04db6d83">listboxButtonPreviousOveredSpriteName</a>;
-<a name="l00225"></a>00225         Ogre::String listboxButtonPreviousNotOveredSpriteName;
-<a name="l00226"></a>00226         Ogre::String listboxButtonPreviousInactiveSpriteName;
-<a name="l00227"></a>00227 
-<a name="l00228"></a>00228         Ogre::String listboxButtonNextOveredSpriteName;
-<a name="l00229"></a>00229         Ogre::String listboxButtonNextNotOveredSpriteName;
-<a name="l00230"></a>00230         Ogre::String listboxButtonNextInactiveSpriteName;
-<a name="l00231"></a>00231 
-<a name="l00232"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a024397526621949c8cf14c24879a1beb">00232</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a024397526621949c8cf14c24879a1beb" title="The gradient type of an overed combobox. If you want a single color, set the gradient to whatever typ...">listboxBackgroundGradientType</a>; 
-<a name="l00233"></a>00233         Ogre::ColourValue listboxBackgroundGradientStart;
-<a name="l00234"></a>00234         Ogre::ColourValue listboxBackgroundGradientEnd;
-<a name="l00235"></a>00235 
-<a name="l00236"></a>00236         Ogre::ColourValue listboxOveredElement;
-<a name="l00237"></a>00237         Ogre::ColourValue listboxNotOveredElement;
-<a name="l00238"></a>00238         Ogre::ColourValue listboxOveredSelectedElement;
-<a name="l00239"></a>00239         Ogre::ColourValue listboxNotOveredSelectedElement;
-<a name="l00240"></a>00240 
-<a name="l00241"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6f78285f9322d12321585611d041db67">00241</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6f78285f9322d12321585611d041db67" title="The text colour of combobox elements.">listboxText</a>; 
-<a name="l00242"></a>00242         <span class="keywordtype">size_t</span> listboxTextSize;
-<a name="l00243"></a>00243 
-<a name="l00244"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a73154cf480b0b153be70a851e59054fa">00244</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a73154cf480b0b153be70a851e59054fa" title="The border colour of a combobox.">listboxBorder</a>; 
-<a name="l00245"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0c7a5e3f3d82858412bf65ff0b8ce745">00245</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0c7a5e3f3d82858412bf65ff0b8ce745" title="The border colour of a highlight combobox.">listboxBorderHighlight</a>; 
-<a name="l00246"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0a3d02f9cc961f2f26eda7b6e8913285">00246</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0a3d02f9cc961f2f26eda7b6e8913285" title="The border size of a combobox.">listboxBorderSize</a>; 
-<a name="l00247"></a>00247 
-<a name="l00253"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a2fd1a73fb96dfc94a06a7916284104c3">00253</a>         Ogre::String <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a2fd1a73fb96dfc94a06a7916284104c3">scrollbarCursorNotOveredSpriteName</a>;
-<a name="l00254"></a>00254         Ogre::String scrollbarCursorOveredSpriteName;
-<a name="l00255"></a>00255         Ogre::String scrollbarCursorSelectedSpriteName;
-<a name="l00256"></a>00256 
-<a name="l00257"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a76a4365b73876141cc598cef2d0bbd7b">00257</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a76a4365b73876141cc598cef2d0bbd7b" title="The gradient type of a scrollbar background. If you want a single color, set the gradient to whatever...">scrollbarBackgroundGradientType</a>; 
-<a name="l00258"></a>00258         Ogre::ColourValue scrollbarBackgroundGradientStart;
-<a name="l00259"></a>00259         Ogre::ColourValue scrollbarBackgroundGradientEnd;
-<a name="l00260"></a>00260 
-<a name="l00261"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a91e6409bce5f775895a566cad185c4bf">00261</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a91e6409bce5f775895a566cad185c4bf" title="The gradient type of a scrollbar bar. If you want a single color, set the gradient to whatever type y...">scrollbarProgressbarGradientType</a>; 
-<a name="l00262"></a>00262         Ogre::ColourValue scrollbarProgressbarGradientStart;
-<a name="l00263"></a>00263         Ogre::ColourValue scrollbarProgressbarGradientEnd;
+<a name="l00207"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a7d2c04e825b027b65776fadecb8890aa">00207</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a7d2c04e825b027b65776fadecb8890aa" title="The border colour of a checkbox.">checkboxBorder</a>; 
+<a name="l00208"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6c1d1913182ed38102c7f4e09679245a">00208</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6c1d1913182ed38102c7f4e09679245a" title="The border colour of a highlight checkbox.">checkboxBorderHighlight</a>; 
+<a name="l00209"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a4540d3d729da976b4a113c10f174b553">00209</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a4540d3d729da976b4a113c10f174b553" title="The border size of a checkbox.">checkboxBorderSize</a>; 
+<a name="l00210"></a>00210 
+<a name="l00211"></a>00211 
+<a name="l00217"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a594d788a3143378ffb933b215fb0ee1a">00217</a>         Ogre::String <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a594d788a3143378ffb933b215fb0ee1a">comboboxButtonPreviousOveredSpriteName</a>;
+<a name="l00218"></a>00218         Ogre::String comboboxButtonPreviousNotOveredSpriteName;
+<a name="l00219"></a>00219         Ogre::String comboboxButtonPreviousInactiveSpriteName;
+<a name="l00220"></a>00220         Ogre::String comboboxButtonPreviousClickedSpriteName;
+<a name="l00221"></a>00221 
+<a name="l00222"></a>00222         Ogre::String comboboxButtonNextOveredSpriteName;
+<a name="l00223"></a>00223         Ogre::String comboboxButtonNextNotOveredSpriteName;
+<a name="l00224"></a>00224         Ogre::String comboboxButtonNextInactiveSpriteName;
+<a name="l00225"></a>00225         Ogre::String comboboxButtonNextClickedSpriteName;
+<a name="l00226"></a>00226 
+<a name="l00227"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a7427ce75dead140834c9ae0f85b78aeb">00227</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a7427ce75dead140834c9ae0f85b78aeb" title="The gradient type of an overed combobox. If you want a single color, set the gradient to whatever typ...">comboboxBackgroundGradientType</a>; 
+<a name="l00228"></a>00228         Ogre::ColourValue comboboxBackgroundGradientStart;
+<a name="l00229"></a>00229         Ogre::ColourValue comboboxBackgroundGradientEnd;
+<a name="l00230"></a>00230 
+<a name="l00231"></a>00231         Ogre::ColourValue comboboxOveredElement;
+<a name="l00232"></a>00232         Ogre::ColourValue comboboxNotOveredElement;
+<a name="l00233"></a>00233         Ogre::ColourValue comboboxSelectedElement;
+<a name="l00234"></a>00234 
+<a name="l00235"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a9b4bb212c7eb556c8b8a2d6aed4e4ef1">00235</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a9b4bb212c7eb556c8b8a2d6aed4e4ef1" title="The text colour of combobox elements.">comboboxText</a>; 
+<a name="l00236"></a>00236         <span class="keywordtype">size_t</span> comboboxTextSize;
+<a name="l00237"></a>00237 
+<a name="l00238"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a10bac42ab01c549a2cc43438b16e094a">00238</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a10bac42ab01c549a2cc43438b16e094a" title="The border colour of a combobox.">comboboxBorder</a>; 
+<a name="l00239"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa3438f2fa2623058aa91da69a32a3a03">00239</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa3438f2fa2623058aa91da69a32a3a03" title="The border colour of a highlight combobox.">comboboxBorderHighlight</a>; 
+<a name="l00240"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aff85e221e1d05dacb07cc9d63465736f">00240</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aff85e221e1d05dacb07cc9d63465736f" title="The border size of a combobox.">comboboxBorderSize</a>; 
+<a name="l00241"></a>00241 
+<a name="l00242"></a>00242 
+<a name="l00248"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ad8a0b848ec236fdb5bfe2356a5fb98b1">00248</a>         Ogre::String <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ad8a0b848ec236fdb5bfe2356a5fb98b1">inlineselectorButtonPreviousOveredSpriteName</a>;
+<a name="l00249"></a>00249         Ogre::String inlineselectorButtonPreviousNotOveredSpriteName;
+<a name="l00250"></a>00250         Ogre::String inlineselectorButtonPreviousInactiveSpriteName;
+<a name="l00251"></a>00251         Ogre::String inlineselectorButtonPreviousClickedSpriteName;
+<a name="l00252"></a>00252 
+<a name="l00253"></a>00253         Ogre::String inlineselectorButtonNextOveredSpriteName;
+<a name="l00254"></a>00254         Ogre::String inlineselectorButtonNextNotOveredSpriteName;
+<a name="l00255"></a>00255         Ogre::String inlineselectorButtonNextInactiveSpriteName;
+<a name="l00256"></a>00256         Ogre::String inlineselectorButtonNextClickedSpriteName;
+<a name="l00257"></a>00257 
+<a name="l00258"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a37be558713c6617fe65447f86a147c02">00258</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a37be558713c6617fe65447f86a147c02" title="The gradient type of an inline selector. If you want a single color, set the gradient to whatever typ...">inlineselectorBackgroundGradientType</a>; 
+<a name="l00259"></a>00259         Ogre::ColourValue inlineselectorBackgroundGradientStart;
+<a name="l00260"></a>00260         Ogre::ColourValue inlineselectorBackgroundGradientEnd;
+<a name="l00261"></a>00261         
+<a name="l00262"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a138ac0878c98df3942fb4c49a6c8d1f6">00262</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a138ac0878c98df3942fb4c49a6c8d1f6" title="The text colour of an inline selector.">inlineselectorText</a>; 
+<a name="l00263"></a>00263         <span class="keywordtype">size_t</span> inlineselectorTextSize;
 <a name="l00264"></a>00264 
-<a name="l00265"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0d5f89948c72ffdcd134890d2eefe3ca">00265</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0d5f89948c72ffdcd134890d2eefe3ca" title="The gradient type of a scrollbar overed cursor. If you want a single color, set the gradient to whate...">scrollbarCursorOveredGradientType</a>; 
-<a name="l00266"></a>00266         Ogre::ColourValue scrollbarCursorOveredGradientStart;
-<a name="l00267"></a>00267         Ogre::ColourValue scrollbarCursorOveredGradientEnd;
+<a name="l00265"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a75e033d7d2daa565accbce5a0113bc06">00265</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a75e033d7d2daa565accbce5a0113bc06" title="The border colour of an inline selector.">inlineselectorBorder</a>; 
+<a name="l00266"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a8e075dad05d0f261e884885b3338bffa">00266</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a8e075dad05d0f261e884885b3338bffa" title="The border colour of a highlight inline selector.">inlineselectorBorderHighlight</a>; 
+<a name="l00267"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a789849a3a3fe5bb5b9c8aa74a01f20d8">00267</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a789849a3a3fe5bb5b9c8aa74a01f20d8" title="The border size of an inline selector.">inlineselectorBorderSize</a>; 
 <a name="l00268"></a>00268 
-<a name="l00269"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#acef6bb9da49e53ba0a3583ee3979e90b">00269</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#acef6bb9da49e53ba0a3583ee3979e90b" title="The gradient type of a scrollbar not overed cursor. If you want a single color, set the gradient to w...">scrollbarCursorNotOveredGradientType</a>; 
-<a name="l00270"></a>00270         Ogre::ColourValue scrollbarCursorNotOveredGradientStart;
-<a name="l00271"></a>00271         Ogre::ColourValue scrollbarCursorNotOveredGradientEnd;
-<a name="l00272"></a>00272 
-<a name="l00273"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa7e5fd5e18842f6c9aef07719c0f188a">00273</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa7e5fd5e18842f6c9aef07719c0f188a" title="The gradient type of a scrollbar selected cursor. If you want a single color, set the gradient to wha...">scrollbarCursorSelectedGradientType</a>; 
-<a name="l00274"></a>00274         Ogre::ColourValue scrollbarCursorSelectedGradientStart;
-<a name="l00275"></a>00275         Ogre::ColourValue scrollbarCursorSelectedGradientEnd;
-<a name="l00276"></a>00276 
-<a name="l00277"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1e62162378b52aa431c244d9d7b5be84">00277</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1e62162378b52aa431c244d9d7b5be84" title="The text colour of a scrollbar.">scrollbarText</a>; 
-<a name="l00278"></a>00278         <span class="keywordtype">size_t</span> scrollbarTextSize;
+<a name="l00269"></a>00269 
+<a name="l00275"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a14f510ab6ae00c0ff3c81fdd04db6d83">00275</a>         Ogre::String <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a14f510ab6ae00c0ff3c81fdd04db6d83">listboxButtonPreviousOveredSpriteName</a>;
+<a name="l00276"></a>00276         Ogre::String listboxButtonPreviousNotOveredSpriteName;
+<a name="l00277"></a>00277         Ogre::String listboxButtonPreviousInactiveSpriteName;
+<a name="l00278"></a>00278         Ogre::String listboxButtonPreviousClickedSpriteName;
 <a name="l00279"></a>00279 
-<a name="l00280"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ada1c3c74e5e71fa4cf799dbefd002e0d">00280</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ada1c3c74e5e71fa4cf799dbefd002e0d" title="The border colour of a scrollbar.">scrollbarBorder</a>; 
-<a name="l00281"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#af3374bd02f9ba6eeadf11db304b772bb">00281</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#af3374bd02f9ba6eeadf11db304b772bb" title="The border colour of a highlight scrollbar.">scrollbarBorderHighlight</a>; 
-<a name="l00282"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a7baa35c0e3e34e7368ac9c596ba8c4d3">00282</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a7baa35c0e3e34e7368ac9c596ba8c4d3" title="The border colour of a scrollbar cursor.">scrollbarCursorBorder</a>; 
-<a name="l00283"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aafba162ee2d640f140f1047a2388eeaa">00283</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aafba162ee2d640f140f1047a2388eeaa" title="The border size of a scrollbar.">scrollbarBorderSize</a>; 
-<a name="l00284"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa1f0b49597f8cb0072e1e91bb9766cea">00284</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa1f0b49597f8cb0072e1e91bb9766cea" title="The border size of a cursor scrollbar.">scrollbarCursorBorderSize</a>; 
-<a name="l00285"></a>00285 
-<a name="l00286"></a>00286         
-<a name="l00292"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a48c1ccc8b1d2c8d21c96dfe537fa9aff">00292</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a48c1ccc8b1d2c8d21c96dfe537fa9aff" title="The gradient type of a overed textzone. If you want a single color, set the gradient to whatever type...">textzoneBackgroundOveredGradientType</a>; 
-<a name="l00293"></a>00293         Ogre::ColourValue textzoneBackgroundOveredGradientStart; 
-<a name="l00294"></a>00294         Ogre::ColourValue textzoneBackgroundOveredGradientEnd;
-<a name="l00295"></a>00295 
-<a name="l00296"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#abe0b7e126a17aa5450e30d4c2358e599">00296</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#abe0b7e126a17aa5450e30d4c2358e599" title="The gradient type of a not overed textzone. If you want a single color, set the gradient to whatever ...">textzoneBackgroundNotOveredGradientType</a>; 
-<a name="l00297"></a>00297         Ogre::ColourValue textzoneBackgroundNotOveredGradientStart;
-<a name="l00298"></a>00298         Ogre::ColourValue textzoneBackgroundNotOveredGradientEnd;
-<a name="l00299"></a>00299         
-<a name="l00300"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6cd06ded7b0b9245772ef5d71dcdf37a">00300</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6cd06ded7b0b9245772ef5d71dcdf37a" title="The gradient type of a selected textzone. If you want a single color, set the gradient to whatever ty...">textzoneBackgroundSelectedGradientType</a>; 
-<a name="l00301"></a>00301         Ogre::ColourValue textzoneBackgroundSelectedGradientStart;
-<a name="l00302"></a>00302         Ogre::ColourValue textzoneBackgroundSelectedGradientEnd;
-<a name="l00303"></a>00303 
-<a name="l00304"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a5fcca503be7d43c2b11d9dd93de17f0e">00304</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a5fcca503be7d43c2b11d9dd93de17f0e" title="The text colour of a textzone.">textzoneText</a>; 
-<a name="l00305"></a>00305         <span class="keywordtype">size_t</span> textzoneTextSize;
-<a name="l00306"></a>00306 
-<a name="l00307"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ae9528e9d0ae30be1a2b232ea603e3542">00307</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ae9528e9d0ae30be1a2b232ea603e3542" title="The border colour of a textzone.">textzoneBorder</a>; 
-<a name="l00308"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a49baebf338aa7a63d3278b31ae8f2788">00308</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a49baebf338aa7a63d3278b31ae8f2788" title="The border colour of a highlight textzone.">textzoneBorderHighlight</a>; 
-<a name="l00309"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa314cb793aa5c24b71b12d818260e591">00309</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa314cb793aa5c24b71b12d818260e591" title="The border colour of a selected textzone.">textzoneBorderSelected</a>; 
-<a name="l00310"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a102f7946146f10bfe5c1f9d95ac82694">00310</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a102f7946146f10bfe5c1f9d95ac82694" title="The border size of a textzone.">textzoneBorderSize</a>; 
-<a name="l00311"></a>00311 
-<a name="l00312"></a>00312         
-<a name="l00318"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ad482440f3bf770f3eef739b90fe5284e">00318</a>         Ogre::String <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ad482440f3bf770f3eef739b90fe5284e">captionBackgroundSpriteName</a>;
-<a name="l00319"></a>00319 
-<a name="l00320"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a934caaab1c4af712eedf2b1abbfcf2b5">00320</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a934caaab1c4af712eedf2b1abbfcf2b5" title="The gradient type of a caption. If you want a single color, set the gradient to whatever type you wan...">captionBackgroundGradientType</a>; 
-<a name="l00321"></a>00321         Ogre::ColourValue captionBackgroundGradientStart;
-<a name="l00322"></a>00322         Ogre::ColourValue captionBackgroundGradientEnd;
-<a name="l00323"></a>00323 
-<a name="l00324"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a943e739f5164408e4c11b670085329de">00324</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a943e739f5164408e4c11b670085329de" title="The text colour of a caption.">captionText</a>; 
-<a name="l00325"></a>00325         <span class="keywordtype">size_t</span> captionTextSize;
-<a name="l00326"></a>00326 
-<a name="l00327"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a8250436cd8a34e6c78bf659cff8fafc0">00327</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a8250436cd8a34e6c78bf659cff8fafc0" title="The border colour of a caption.">captionBorder</a>; 
-<a name="l00328"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a74bdbe758ecaf10feaff6f82459602fb">00328</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a74bdbe758ecaf10feaff6f82459602fb" title="The border size of a caption.">captionBorderSize</a>; 
+<a name="l00280"></a>00280         Ogre::String listboxButtonNextOveredSpriteName;
+<a name="l00281"></a>00281         Ogre::String listboxButtonNextNotOveredSpriteName;
+<a name="l00282"></a>00282         Ogre::String listboxButtonNextInactiveSpriteName;
+<a name="l00283"></a>00283         Ogre::String listboxButtonNextClickedSpriteName;
+<a name="l00284"></a>00284 
+<a name="l00285"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a024397526621949c8cf14c24879a1beb">00285</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a024397526621949c8cf14c24879a1beb" title="The gradient type of an overed combobox. If you want a single color, set the gradient to whatever typ...">listboxBackgroundGradientType</a>; 
+<a name="l00286"></a>00286         Ogre::ColourValue listboxBackgroundGradientStart;
+<a name="l00287"></a>00287         Ogre::ColourValue listboxBackgroundGradientEnd;
+<a name="l00288"></a>00288 
+<a name="l00289"></a>00289         Ogre::ColourValue listboxOveredElement;
+<a name="l00290"></a>00290         Ogre::ColourValue listboxNotOveredElement;
+<a name="l00291"></a>00291         Ogre::ColourValue listboxOveredSelectedElement;
+<a name="l00292"></a>00292         Ogre::ColourValue listboxNotOveredSelectedElement;
+<a name="l00293"></a>00293 
+<a name="l00294"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6f78285f9322d12321585611d041db67">00294</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6f78285f9322d12321585611d041db67" title="The text colour of combobox elements.">listboxText</a>; 
+<a name="l00295"></a>00295         <span class="keywordtype">size_t</span> listboxTextSize;
+<a name="l00296"></a>00296 
+<a name="l00297"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a73154cf480b0b153be70a851e59054fa">00297</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a73154cf480b0b153be70a851e59054fa" title="The border colour of a combobox.">listboxBorder</a>; 
+<a name="l00298"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0c7a5e3f3d82858412bf65ff0b8ce745">00298</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0c7a5e3f3d82858412bf65ff0b8ce745" title="The border colour of a highlight combobox.">listboxBorderHighlight</a>; 
+<a name="l00299"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0a3d02f9cc961f2f26eda7b6e8913285">00299</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0a3d02f9cc961f2f26eda7b6e8913285" title="The border size of a combobox.">listboxBorderSize</a>; 
+<a name="l00300"></a>00300 
+<a name="l00306"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a2fd1a73fb96dfc94a06a7916284104c3">00306</a>         Ogre::String <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a2fd1a73fb96dfc94a06a7916284104c3">scrollbarCursorNotOveredSpriteName</a>;
+<a name="l00307"></a>00307         Ogre::String scrollbarCursorOveredSpriteName;
+<a name="l00308"></a>00308         Ogre::String scrollbarCursorSelectedSpriteName;
+<a name="l00309"></a>00309 
+<a name="l00310"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a76a4365b73876141cc598cef2d0bbd7b">00310</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a76a4365b73876141cc598cef2d0bbd7b" title="The gradient type of a scrollbar background. If you want a single color, set the gradient to whatever...">scrollbarBackgroundGradientType</a>; 
+<a name="l00311"></a>00311         Ogre::ColourValue scrollbarBackgroundGradientStart;
+<a name="l00312"></a>00312         Ogre::ColourValue scrollbarBackgroundGradientEnd;
+<a name="l00313"></a>00313 
+<a name="l00314"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a91e6409bce5f775895a566cad185c4bf">00314</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a91e6409bce5f775895a566cad185c4bf" title="The gradient type of a scrollbar bar. If you want a single color, set the gradient to whatever type y...">scrollbarProgressbarGradientType</a>; 
+<a name="l00315"></a>00315         Ogre::ColourValue scrollbarProgressbarGradientStart;
+<a name="l00316"></a>00316         Ogre::ColourValue scrollbarProgressbarGradientEnd;
+<a name="l00317"></a>00317 
+<a name="l00318"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0d5f89948c72ffdcd134890d2eefe3ca">00318</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a0d5f89948c72ffdcd134890d2eefe3ca" title="The gradient type of a scrollbar overed cursor. If you want a single color, set the gradient to whate...">scrollbarCursorOveredGradientType</a>; 
+<a name="l00319"></a>00319         Ogre::ColourValue scrollbarCursorOveredGradientStart;
+<a name="l00320"></a>00320         Ogre::ColourValue scrollbarCursorOveredGradientEnd;
+<a name="l00321"></a>00321 
+<a name="l00322"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#acef6bb9da49e53ba0a3583ee3979e90b">00322</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#acef6bb9da49e53ba0a3583ee3979e90b" title="The gradient type of a scrollbar not overed cursor. If you want a single color, set the gradient to w...">scrollbarCursorNotOveredGradientType</a>; 
+<a name="l00323"></a>00323         Ogre::ColourValue scrollbarCursorNotOveredGradientStart;
+<a name="l00324"></a>00324         Ogre::ColourValue scrollbarCursorNotOveredGradientEnd;
+<a name="l00325"></a>00325 
+<a name="l00326"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa7e5fd5e18842f6c9aef07719c0f188a">00326</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa7e5fd5e18842f6c9aef07719c0f188a" title="The gradient type of a scrollbar selected cursor. If you want a single color, set the gradient to wha...">scrollbarCursorSelectedGradientType</a>; 
+<a name="l00327"></a>00327         Ogre::ColourValue scrollbarCursorSelectedGradientStart;
+<a name="l00328"></a>00328         Ogre::ColourValue scrollbarCursorSelectedGradientEnd;
 <a name="l00329"></a>00329 
-<a name="l00330"></a>00330         
-<a name="l00336"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#acfd4fd259771668d1b7cb18e46b53cb1">00336</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#acfd4fd259771668d1b7cb18e46b53cb1" title="The gradient type of a progressbar background. If you want a single color, set the gradient to whatev...">progressbarBackgroundGradientType</a>; 
-<a name="l00337"></a>00337         Ogre::ColourValue progressbarBackgroundGradientStart;
-<a name="l00338"></a>00338         Ogre::ColourValue progressbarBackgroundGradientEnd;
-<a name="l00339"></a>00339 
-<a name="l00340"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a477b20843e9cd98de036d27c83a7d969">00340</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a477b20843e9cd98de036d27c83a7d969" title="The gradient type of a progressbar loadingbar background. If you want a single color, set the gradient to whatever type you want and the same colors for gradientStart and gradientEnd.">progressbarLoadingBarGradientType</a>; 
-<a name="l00341"></a>00341         Ogre::ColourValue progressbarLoadingBarGradientStart;
-<a name="l00342"></a>00342         Ogre::ColourValue progressbarLoadingBarGradientEnd;
-<a name="l00343"></a>00343 
-<a name="l00344"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6302babfc247c809257399fe3f7ba966">00344</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6302babfc247c809257399fe3f7ba966" title="The text colour of a progressbar.">progressbarText</a>; 
-<a name="l00345"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ae5f053d765849d0278730c99f48789bb">00345</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ae5f053d765849d0278730c99f48789bb" title="The text colour of a caption.">progressbarTextSize</a>; 
-<a name="l00346"></a>00346 
-<a name="l00347"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a939c33c67f374a9431b0b61fece22866">00347</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a939c33c67f374a9431b0b61fece22866" title="The border colour of a progressbar.">progressbarBorder</a>; 
-<a name="l00348"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a34c1a053ed748be636264f4d87b50b08">00348</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a34c1a053ed748be636264f4d87b50b08" title="The border colour of a highlight progressbar.">progressbarBorderHighlight</a>; 
-<a name="l00349"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1604468040c65849fefc82a35e164994">00349</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1604468040c65849fefc82a35e164994" title="The border size of a progressbar.">progressbarBorderSize</a>; 
-<a name="l00350"></a>00350 };
-<a name="l00351"></a>00351 
-<a name="l00352"></a>00352 }
-<a name="l00353"></a>00353 
-<a name="l00354"></a>00354 <span class="preprocessor">#endif</span>
+<a name="l00330"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1e62162378b52aa431c244d9d7b5be84">00330</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1e62162378b52aa431c244d9d7b5be84" title="The text colour of a scrollbar.">scrollbarText</a>; 
+<a name="l00331"></a>00331         <span class="keywordtype">size_t</span> scrollbarTextSize;
+<a name="l00332"></a>00332 
+<a name="l00333"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ada1c3c74e5e71fa4cf799dbefd002e0d">00333</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ada1c3c74e5e71fa4cf799dbefd002e0d" title="The border colour of a scrollbar.">scrollbarBorder</a>; 
+<a name="l00334"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#af3374bd02f9ba6eeadf11db304b772bb">00334</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#af3374bd02f9ba6eeadf11db304b772bb" title="The border colour of a highlight scrollbar.">scrollbarBorderHighlight</a>; 
+<a name="l00335"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a7baa35c0e3e34e7368ac9c596ba8c4d3">00335</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a7baa35c0e3e34e7368ac9c596ba8c4d3" title="The border colour of a scrollbar cursor.">scrollbarCursorBorder</a>; 
+<a name="l00336"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aafba162ee2d640f140f1047a2388eeaa">00336</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aafba162ee2d640f140f1047a2388eeaa" title="The border size of a scrollbar.">scrollbarBorderSize</a>; 
+<a name="l00337"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa1f0b49597f8cb0072e1e91bb9766cea">00337</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa1f0b49597f8cb0072e1e91bb9766cea" title="The border size of a cursor scrollbar.">scrollbarCursorBorderSize</a>; 
+<a name="l00338"></a>00338 
+<a name="l00339"></a>00339         
+<a name="l00345"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a48c1ccc8b1d2c8d21c96dfe537fa9aff">00345</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a48c1ccc8b1d2c8d21c96dfe537fa9aff" title="The gradient type of a overed textzone. If you want a single color, set the gradient to whatever type...">textzoneBackgroundOveredGradientType</a>; 
+<a name="l00346"></a>00346         Ogre::ColourValue textzoneBackgroundOveredGradientStart; 
+<a name="l00347"></a>00347         Ogre::ColourValue textzoneBackgroundOveredGradientEnd;
+<a name="l00348"></a>00348 
+<a name="l00349"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#abe0b7e126a17aa5450e30d4c2358e599">00349</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#abe0b7e126a17aa5450e30d4c2358e599" title="The gradient type of a not overed textzone. If you want a single color, set the gradient to whatever ...">textzoneBackgroundNotOveredGradientType</a>; 
+<a name="l00350"></a>00350         Ogre::ColourValue textzoneBackgroundNotOveredGradientStart;
+<a name="l00351"></a>00351         Ogre::ColourValue textzoneBackgroundNotOveredGradientEnd;
+<a name="l00352"></a>00352         
+<a name="l00353"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6cd06ded7b0b9245772ef5d71dcdf37a">00353</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6cd06ded7b0b9245772ef5d71dcdf37a" title="The gradient type of a selected textzone. If you want a single color, set the gradient to whatever ty...">textzoneBackgroundSelectedGradientType</a>; 
+<a name="l00354"></a>00354         Ogre::ColourValue textzoneBackgroundSelectedGradientStart;
+<a name="l00355"></a>00355         Ogre::ColourValue textzoneBackgroundSelectedGradientEnd;
+<a name="l00356"></a>00356 
+<a name="l00357"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a5fcca503be7d43c2b11d9dd93de17f0e">00357</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a5fcca503be7d43c2b11d9dd93de17f0e" title="The text colour of a textzone.">textzoneText</a>; 
+<a name="l00358"></a>00358         <span class="keywordtype">size_t</span> textzoneTextSize;
+<a name="l00359"></a>00359 
+<a name="l00360"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ae9528e9d0ae30be1a2b232ea603e3542">00360</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ae9528e9d0ae30be1a2b232ea603e3542" title="The border colour of a textzone.">textzoneBorder</a>; 
+<a name="l00361"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a49baebf338aa7a63d3278b31ae8f2788">00361</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a49baebf338aa7a63d3278b31ae8f2788" title="The border colour of a highlight textzone.">textzoneBorderHighlight</a>; 
+<a name="l00362"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa314cb793aa5c24b71b12d818260e591">00362</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#aa314cb793aa5c24b71b12d818260e591" title="The border colour of a selected textzone.">textzoneBorderSelected</a>; 
+<a name="l00363"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a102f7946146f10bfe5c1f9d95ac82694">00363</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a102f7946146f10bfe5c1f9d95ac82694" title="The border size of a textzone.">textzoneBorderSize</a>; 
+<a name="l00364"></a>00364 
+<a name="l00365"></a>00365         
+<a name="l00371"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ad482440f3bf770f3eef739b90fe5284e">00371</a>         Ogre::String <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ad482440f3bf770f3eef739b90fe5284e">captionBackgroundSpriteName</a>;
+<a name="l00372"></a>00372 
+<a name="l00373"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a934caaab1c4af712eedf2b1abbfcf2b5">00373</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a934caaab1c4af712eedf2b1abbfcf2b5" title="The gradient type of a caption. If you want a single color, set the gradient to whatever type you wan...">captionBackgroundGradientType</a>; 
+<a name="l00374"></a>00374         Ogre::ColourValue captionBackgroundGradientStart;
+<a name="l00375"></a>00375         Ogre::ColourValue captionBackgroundGradientEnd;
+<a name="l00376"></a>00376 
+<a name="l00377"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a943e739f5164408e4c11b670085329de">00377</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a943e739f5164408e4c11b670085329de" title="The text colour of a caption.">captionText</a>; 
+<a name="l00378"></a>00378         <span class="keywordtype">size_t</span> captionTextSize;
+<a name="l00379"></a>00379 
+<a name="l00380"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a8250436cd8a34e6c78bf659cff8fafc0">00380</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a8250436cd8a34e6c78bf659cff8fafc0" title="The border colour of a caption.">captionBorder</a>; 
+<a name="l00381"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a74bdbe758ecaf10feaff6f82459602fb">00381</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a74bdbe758ecaf10feaff6f82459602fb" title="The border size of a caption.">captionBorderSize</a>; 
+<a name="l00382"></a>00382 
+<a name="l00383"></a>00383         
+<a name="l00389"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#acfd4fd259771668d1b7cb18e46b53cb1">00389</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#acfd4fd259771668d1b7cb18e46b53cb1" title="The gradient type of a progressbar background. If you want a single color, set the gradient to whatev...">progressbarBackgroundGradientType</a>; 
+<a name="l00390"></a>00390         Ogre::ColourValue progressbarBackgroundGradientStart;
+<a name="l00391"></a>00391         Ogre::ColourValue progressbarBackgroundGradientEnd;
+<a name="l00392"></a>00392 
+<a name="l00393"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a477b20843e9cd98de036d27c83a7d969">00393</a>         Gorilla::Gradient <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a477b20843e9cd98de036d27c83a7d969" title="The gradient type of a progressbar loadingbar background. If you want a single color, set the gradient to whatever type you want and the same colors for gradientStart and gradientEnd.">progressbarLoadingBarGradientType</a>; 
+<a name="l00394"></a>00394         Ogre::ColourValue progressbarLoadingBarGradientStart;
+<a name="l00395"></a>00395         Ogre::ColourValue progressbarLoadingBarGradientEnd;
+<a name="l00396"></a>00396 
+<a name="l00397"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6302babfc247c809257399fe3f7ba966">00397</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a6302babfc247c809257399fe3f7ba966" title="The text colour of a progressbar.">progressbarText</a>; 
+<a name="l00398"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#ae5f053d765849d0278730c99f48789bb">00398</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#ae5f053d765849d0278730c99f48789bb" title="The text colour of a caption.">progressbarTextSize</a>; 
+<a name="l00399"></a>00399 
+<a name="l00400"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a939c33c67f374a9431b0b61fece22866">00400</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a939c33c67f374a9431b0b61fece22866" title="The border colour of a progressbar.">progressbarBorder</a>; 
+<a name="l00401"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a34c1a053ed748be636264f4d87b50b08">00401</a>         Ogre::ColourValue <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a34c1a053ed748be636264f4d87b50b08" title="The border colour of a highlight progressbar.">progressbarBorderHighlight</a>; 
+<a name="l00402"></a><a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1604468040c65849fefc82a35e164994">00402</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_gui3_d_1_1_panel_colors.html#a1604468040c65849fefc82a35e164994" title="The border size of a progressbar.">progressbarBorderSize</a>; 
+<a name="l00403"></a>00403 };
+<a name="l00404"></a>00404 
+<a name="l00405"></a>00405 }
+<a name="l00406"></a>00406 
+<a name="l00407"></a>00407 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -396,7 +449,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 8 2012 16:11:54 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 1 2012 16:57:54 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
