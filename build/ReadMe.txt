@@ -1,4 +1,4 @@
-﻿Gui3D Library v1.01
+﻿Gui3D Library v1.1
 
 *****************************
 	INSTALL INSTRUCTIONS
