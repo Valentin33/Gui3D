@@ -1,4 +1,16 @@
-Gui3D Library v1.01
+Gui3D Library v1.1
+
+*****************************
+	CHANGELOG FOR 1.1 version
+*****************************
+
+ScreenPanel : Added the ScreenPanel object that add 2D GUI widgets.
+
+Panel : Unit has changed when you create a Panel. (before size=Vector2(4, 5), now size has to be Vector2(400, 500)).
+
+Panel+ScreenPanel : added "showInternalMouseCursor" and "hideInternalMouseCursor" methods. By default, the cursor is hidden.
+
+Project : Fix nullptr (with NULLPTR constant) for compiler that doesnt support it.
 
 *****************************
 	CHANGELOG FOR 1.01 version
@@ -21,3 +33,5 @@ Button : Added buttonBackgroundClickedGradientType + buttonClickedSpriteName in 
 			- InlineSelector
 
 Project : Update the project to automatically copy header and lib files into sdk/ folder instead of doing it manually.
+
+

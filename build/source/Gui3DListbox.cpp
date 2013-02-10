@@ -216,7 +216,7 @@ vector<Ogre::String> Listbox::getValues()
 	{
 		if ((*it).second)
 			values.push_back(mValues[(*it).first]);
-		it++;
+		++it;
 	}
 	return values;
 }
@@ -224,9 +224,7 @@ vector<Ogre::String> Listbox::getValues()
 
 void Listbox::_actualize()
 {
-	for (unsigned int i = 0; 
-		i < mCaptions.size();
-		i++)
+	for (size_t i = 0; i < mCaptions.size(); i++)
 	{
 		Ogre::ColourValue color;
 

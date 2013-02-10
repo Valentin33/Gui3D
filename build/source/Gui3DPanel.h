@@ -28,34 +28,16 @@
 
 
 
-#include <vector>
-
-#include <OIS\OIS.h>
-
 #include "Gorilla.h"
 
 #include "Gui3D.h"
-#include "Gui3DContainer.h"
-
-#include "Gui3DPanelElement.h"
-
-#include "Gui3DButton.h"
-#include "Gui3DCaption.h"
-#include "Gui3DCheckbox.h"
-#include "Gui3DCheckboxText.h"
-#include "Gui3DCheckboxSprite.h"
-#include "Gui3DCombobox.h"
-#include "Gui3DInlineSelector.h"
-#include "Gui3DListbox.h"
-#include "Gui3DProgressBar.h"
-#include "Gui3DScrollBar.h"
-#include "Gui3DTextZone.h"
+#include "Gui3DPanelContainer.h"
 
 namespace Gui3D
 {
 
 //
-class Panel : public Container
+class Panel : public PanelContainer
 {
 public:
 	Panel(Gui3D* gui, 
@@ -66,26 +48,10 @@ public:
 		Ogre::String name);
 
 	~Panel();
-
-	/** \brief Give the focus to an element of this panel.
-		note.
-			If the element isn't contained by this panel, nothing will happened.
-	*/
-	void setFocusedElement(PanelElement* e);
-
+	
 	/** \brief Set the distance the user can interact with the panel
 	*/
 	void setDistanceFromPanelToInteractWith(Ogre::Real distanceFromPanelToInteractWith);
-	
-	void injectKeyPressed(const OIS::KeyEvent& evt);
-
-	void injectKeyReleased(const OIS::KeyEvent& evt);
-
-	void injectMousePressed(const OIS::MouseEvent& evt,
-		OIS::MouseButtonID id);
-
-	void injectMouseReleased(const OIS::MouseEvent& evt, 
-		OIS::MouseButtonID id);
 
 	/** \brief Send a ray from a part of the screen to this panel to
 	actualize the internal mouse position on the panel.
@@ -93,118 +59,12 @@ public:
 	*/
 	bool injectMouseMoved(const Ogre::Ray& ray);
 
-	/** \brief Inject time to have animations with panel elements, such as
-	a flash on and off of a cursor in Textzones
-	*/
-	void injectTime(double time);
-
-	/** \brief UnOver all elements.
-	*/
-	void unOverAllElements();
-
-	Button* makeButton(Ogre::Real x, 
-		Ogre::Real y, 
-		size_t width,
-		size_t height,
-		const Ogre::String& text);
-
-	Caption* makeCaption(Ogre::Real x, 
-		Ogre::Real y,
-		size_t width,
-		size_t height,
-		const Ogre::String& text,
-		Gorilla::TextAlignment textAlign = Gorilla::TextAlign_Left,
-		Gorilla::VerticalAlignment verticalAlign = Gorilla::VerticalAlign_Top);
-
-	Checkbox* makeCheckbox(Ogre::Real x,
-		Ogre::Real y,
-		size_t width,
-		size_t height);
-
-	Combobox* makeCombobox(Ogre::Real x, 
-		Ogre::Real y,
-		size_t width,
-		size_t height,
-		const std::vector<Ogre::String>& items,
-		unsigned int nbDisplayedElements);
-
-	InlineSelector* makeInlineSelector(Ogre::Real x,
-		Ogre::Real y,
-		size_t width,
-		size_t height,
-		const std::vector<Ogre::String>& items);
-
-	Listbox* makeListbox(Ogre::Real x, 
-		Ogre::Real y,
-		size_t width,
-		size_t height,
-		const std::vector<Ogre::String>& items,
-		unsigned int nbDisplayedElements);
-
-	ProgressBar* makeProgressBar(Ogre::Real x, 
-		Ogre::Real y,
-		size_t width,
-		size_t height);
-
-	ScrollBar* makeScrollBar(Ogre::Real x, 
-		Ogre::Real y,
-		size_t width,
-		size_t height,
-		Ogre::Real minValue,
-		Ogre::Real maxValue);
-
-	TextZone* makeTextZone(Ogre::Real x,
-		Ogre::Real y,
-		size_t width,
-		size_t height,
-		const Ogre::String& text);
-
-	void destroyButton(Button*);
-	
-	void destroyCaption(Caption*);
-	
-	void destroyCheckbox(Checkbox*);
-	
-	void destroyCombobox(Combobox*);
-	
-	void destroyInlineSelector(InlineSelector*);
-	
-	void destroyProgressBar(ProgressBar*);
-	
-	void destroyScrollBar(ScrollBar*);
-	
-	void destroyTextZoneEditable(TextZone*);
-
 	Ogre::SceneNode* mNode; //!< \brief The panel node
 	Ogre::SceneNode* mPanelCameraNode; //!< \brief The node the camera should be attached to and look at mNode for this panel
 
 protected:
 	Gorilla::ScreenRenderable* mScreenRenderable;
-	Gorilla::Rectangle* mBackground;
-	Ogre::Vector2 mSize;
-
-	Ogre::Vector2 mInternalMousePos; //!< \brief The Internal position of the mouse in the panel
-	Gorilla::Rectangle* mMousePointer;
-
-	std::vector<PanelElement*> mPanelElements;
-	PanelElement* mFocusedPanelElement; //!< \brief The element that actually have the focus
-
 	Ogre::Real mDistanceFromPanelToInteractWith; //!< \brief The distance the origin of a ray can be to interact with the panel.
-
-	/** \brief Save key pressed when there's no focused element
-	If a focusedElement is set before keyReleased, these keys are then sent
-	*/
-	std::vector<OIS::KeyCode> mKeyCodes;
-
-	/** \brief Internal use. Use make[XXX] to add element to this panel.
-	Add an item to the panel.
-	*/
-	void addItem(PanelElement* item);
-
-	/** \brief Internal use. Use destroy[XXX] to remove an element to this panel.
-	Remove an item to the panel.
-	*/
-	void removeItem(PanelElement* item);
 };
 
 }

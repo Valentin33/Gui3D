@@ -47,7 +47,7 @@ public:
 
 	virtual bool operator()(PanelElement* e)
 	{
-		if (mObject != nullptr && mMethod != nullptr)
+		if (mObject != NULLPTR && mMethod != NULLPTR)
 			return (mObject->*mMethod)(e);
 		return false;
 	}

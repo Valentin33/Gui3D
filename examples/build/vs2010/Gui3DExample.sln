@@ -7,10 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnvironmentDemo", "Environm
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CompleteGuiDemo", "CompleteGuiDemo\CompleteGuiDemo.vcxproj", "{8568905B-D8B4-4E44-A7E3-9F251BA6BAFA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B95FF1A5-C7F5-47E7-8B29-DEFA86113066}"
-	ProjectSection(SolutionItems) = preProject
-		README.txt = README.txt
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Simple2DDemo", "Simple2DDemo\Simple2DDemo.vcxproj", "{B7D2629F-EFC1-4240-A68D-0BE68F32DD9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +27,10 @@ Global
 		{8568905B-D8B4-4E44-A7E3-9F251BA6BAFA}.Debug|Win32.Build.0 = Debug|Win32
 		{8568905B-D8B4-4E44-A7E3-9F251BA6BAFA}.Release|Win32.ActiveCfg = Release|Win32
 		{8568905B-D8B4-4E44-A7E3-9F251BA6BAFA}.Release|Win32.Build.0 = Release|Win32
+		{B7D2629F-EFC1-4240-A68D-0BE68F32DD9C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B7D2629F-EFC1-4240-A68D-0BE68F32DD9C}.Debug|Win32.Build.0 = Debug|Win32
+		{B7D2629F-EFC1-4240-A68D-0BE68F32DD9C}.Release|Win32.ActiveCfg = Release|Win32
+		{B7D2629F-EFC1-4240-A68D-0BE68F32DD9C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

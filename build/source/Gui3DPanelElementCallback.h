@@ -42,7 +42,7 @@ class PanelElementCallback : public PanelElement
 {
 public:
 	PanelElementCallback(Container* parentContainer)
-	: PanelElement(parentContainer), mCallback(nullptr)
+	: PanelElement(parentContainer), mCallback(NULLPTR)
 	{}
 
 protected:
@@ -52,7 +52,7 @@ protected:
 	*/
 	void callCallback()
 	{
-		if (mCallback != nullptr)
+		if (mCallback != NULLPTR)
 			(*mCallback)(this);
 	}
 
@@ -60,7 +60,7 @@ protected:
 	*/
 	void changeCallback(FunctorBase* newCallback)
 	{
-		if (mCallback != nullptr)
+		if (mCallback != NULLPTR)
 			delete mCallback;
 		mCallback = newCallback;
 	}

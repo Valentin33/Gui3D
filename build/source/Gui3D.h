@@ -68,6 +68,8 @@ public:
 	*/
 	Gorilla::Silverback* getSilverback();
 
+	// ScreenRenderables methods (2D Screens rendered in 3D)
+
 	Gorilla::Layer* getLayer(Ogre::String screenRenderableName,
 		Ogre::String layerName);
 
@@ -85,10 +87,26 @@ public:
 	Gorilla::ScreenRenderable* createScreenRenderable(
 		const Ogre::Vector2& pos, Ogre::String atlasName, Ogre::String name);
 
+	// Screens methods (2D screen)
+
+	Gorilla::Layer* getLayerScreen(Ogre::String screenName,
+		Ogre::String layerName);
+
+	Gorilla::Layer* getLayerScreen(Gorilla::Screen* screen,
+		Ogre::String layerName);
+
+	Gorilla::Layer* createLayerScreen(Gorilla::Screen* screen,
+		Ogre::String layerName);
+
+	Gorilla::Layer* createLayerScreen(Ogre::String screenName,
+		Ogre::String layerName);
+
 	Gorilla::Screen* createScreen(Ogre::Viewport* vp, 
 		Ogre::String atlasName, Ogre::String name);
 
 	Gorilla::Screen* getScreen(Ogre::String name);
+
+	// General methods
 
 	void loadAtlas(Ogre::String name);
 

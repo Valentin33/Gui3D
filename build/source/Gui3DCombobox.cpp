@@ -158,9 +158,7 @@ Ogre::String Combobox::getValue()
 
 void Combobox::_actualize()
 {
-	for (unsigned int i = 0; 
-		i < mCaptions.size();
-		i++)
+	for (size_t i = 0; i < mCaptions.size(); i++)
 	{
 		Ogre::ColourValue color;
 

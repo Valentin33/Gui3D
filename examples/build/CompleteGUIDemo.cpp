@@ -1,28 +1,9 @@
-/*
-    Gui3D
-    -------
-    
-    Copyright (c) 2012 Valentin Frechaud
-                                                                                  
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-                                                                                  
-    The above copyright notice and this permission notice shall be included in
-    all copies or substantial portions of the Software.
-                                                                                  
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    THE SOFTWARE. 
-    
-*/
+// Fix by mkultra333 for compilers that doesn't support the nullptr
+#ifndef __CPP09NULLPTRSUPPORTED
+#define NULLPTR (0)
+#else
+#define NULLPTR (nullptr)
+#endif
 
 
 #include <iostream>
@@ -481,7 +462,7 @@ public:
 	MyLinkedPanel* createSummaryPanel()
 	{
 		MyLinkedPanel* panel = new MyLinkedPanel(
-			mGui3D, mSceneMgr, Ogre::Vector2(4, 2.6), "completeGUIDemo", "panelSummary");
+			mGui3D, mSceneMgr, Ogre::Vector2(400, 260), "completeGUIDemo", "panelSummary");
 
 		panel->makeCaption(5, -30, 390, 30, "Summary Panel");
 
@@ -522,7 +503,7 @@ public:
 	MyLinkedPanel* createInfosPanel()
 	{
 		MyLinkedPanel* panel = new MyLinkedPanel(
-			mGui3D, mSceneMgr, Ogre::Vector2(4, 2), "completeGUIDemo", "panelInfo");
+			mGui3D, mSceneMgr, Ogre::Vector2(400, 200), "completeGUIDemo", "panelInfo");
 		
 		panel->makeCaption(5, -30, 390, 30, "Infos Panel");
 
@@ -546,7 +527,7 @@ public:
 	MyLinkedPanel* createTestPanel()
 	{
 		MyLinkedPanel* panel = new MyLinkedPanel(
-			mGui3D, mSceneMgr, Ogre::Vector2(4, 4), "completeGUIDemo", "panelInfo");
+			mGui3D, mSceneMgr, Ogre::Vector2(400, 400), "completeGUIDemo", "panelInfo");
 
 		/*
 		Gui3D::Button* b = panel->makeButton(200, 200, 100, 100, "TEST");
@@ -625,7 +606,7 @@ public:
 	MyLinkedPanel* createVisitedCountryPanels()
 	{
 		MyLinkedPanel* panel = new MyLinkedPanel(
-			mGui3D, mSceneMgr, Ogre::Vector2(4, 3.3), "completeGUIDemo", "travelPanel");
+			mGui3D, mSceneMgr, Ogre::Vector2(400, 330), "completeGUIDemo", "travelPanel");
 
 		Gui3D::Caption* c = panel->makeCaption(5, -30, 390, 30, "Travel Panel");
 
@@ -663,7 +644,7 @@ public:
 	MyLinkedPanel* createLoadingPanel()
 	{
 		MyLinkedPanel* panel = new MyLinkedPanel(
-			mGui3D, mSceneMgr, Ogre::Vector2(4, 2.2), "completeGUIDemo", "loadingPanel");
+			mGui3D, mSceneMgr, Ogre::Vector2(400, 220), "completeGUIDemo", "loadingPanel");
 		
 		panel->makeCaption(5, -30, 390, 30, "Loading Panel");
 
@@ -695,7 +676,7 @@ public:
 	MyLinkedPanel* createProfilPanel()
 	{
 		MyLinkedPanel* panel = new MyLinkedPanel(
-			mGui3D, mSceneMgr, Ogre::Vector2(4, 2.9), "completeGUIDemo", "panelProfil");
+			mGui3D, mSceneMgr, Ogre::Vector2(400, 290), "completeGUIDemo", "panelProfil");
 
 		panel->makeCaption(5, -30, 390, 30, "Profil Panel");
 
@@ -731,7 +712,7 @@ public:
 	MyLinkedPanel* createMousePanel()
 	{
 		MyLinkedPanel* panel = new MyLinkedPanel(
-			mGui3D, mSceneMgr, Ogre::Vector2(4, 2), "completeGUIDemo", "panelMouse");
+			mGui3D, mSceneMgr, Ogre::Vector2(400, 200), "completeGUIDemo", "panelMouse");
 
 		panel->makeCaption(5, -30, 390, 30, "Mouse Panel");
 
@@ -762,7 +743,7 @@ public:
 	MyLinkedPanel* createResolutionPanel()
 	{
 		MyLinkedPanel* panel = new MyLinkedPanel(
-			mGui3D, mSceneMgr, Ogre::Vector2(4, 3.4), "completeGUIDemo", "panelResolution");
+			mGui3D, mSceneMgr, Ogre::Vector2(400, 340), "completeGUIDemo", "panelResolution");
 
 		panel->makeCaption(5, -30, 390, 30, "Resolution Panel");
 

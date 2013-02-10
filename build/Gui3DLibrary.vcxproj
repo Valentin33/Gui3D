@@ -115,6 +115,7 @@ copy $(SolutionDir)source\*.h "$(ProjectDir)..\sdk\"</Command>
     <ClInclude Include="source\Gui3DCheckboxText.h" />
     <ClInclude Include="source\Gui3DClock.h" />
     <ClInclude Include="source\Gui3DCombobox.h" />
+    <ClInclude Include="source\Gui3DConfig.h" />
     <ClInclude Include="source\Gui3DContainer.h" />
     <ClInclude Include="source\Gui3DDebugPanelColors.h" />
     <ClInclude Include="source\Gui3DFunctorBase.h" />
@@ -124,9 +125,11 @@ copy $(SolutionDir)source\*.h "$(ProjectDir)..\sdk\"</Command>
     <ClInclude Include="source\Gui3DMultipleElementsSelector.h" />
     <ClInclude Include="source\Gui3DPanel.h" />
     <ClInclude Include="source\Gui3DPanelColors.h" />
+    <ClInclude Include="source\Gui3DPanelContainer.h" />
     <ClInclude Include="source\Gui3DPanelElement.h" />
     <ClInclude Include="source\Gui3DPanelElementCallback.h" />
     <ClInclude Include="source\Gui3DProgressBar.h" />
+    <ClInclude Include="source\Gui3DScreenPanel.h" />
     <ClInclude Include="source\Gui3DScrollBar.h" />
     <ClInclude Include="source\Gui3DStringCursorEdit.h" />
     <ClInclude Include="source\Gui3DTextZone.h" />
@@ -149,8 +152,10 @@ copy $(SolutionDir)source\*.h "$(ProjectDir)..\sdk\"</Command>
     <ClCompile Include="source\Gui3DListbox.cpp" />
     <ClCompile Include="source\Gui3DMultipleElementsSelector.cpp" />
     <ClCompile Include="source\Gui3DPanel.cpp" />
+    <ClCompile Include="source\Gui3DPanelContainer.cpp" />
     <ClCompile Include="source\Gui3DPanelElement.cpp" />
     <ClCompile Include="source\Gui3DProgressBar.cpp" />
+    <ClCompile Include="source\Gui3DScreenPanel.cpp" />
     <ClCompile Include="source\Gui3DScrollBar.cpp" />
     <ClCompile Include="source\Gui3DStringCursorEdit.cpp" />
     <ClCompile Include="source\Gui3DTextZone.cpp" />

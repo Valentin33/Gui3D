@@ -91,6 +91,8 @@ public:
 
 	Ogre::Vector2 getPosition();
 
+	void resetState();
+
 	/** \brief Set the over and not over background to a sprite from the texture atlas.
 		note.
 			The sprites will be set only if both are filled

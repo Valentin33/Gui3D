@@ -120,6 +120,15 @@ void MultipleElementsSelector::injectTimeAndMousePosition(double time, const Ogr
 }
 
 
+void MultipleElementsSelector::resetState()
+{
+	mPreviousElementsButton->resetState();
+	mNextElementsButton->resetState();
+
+	PanelElement::resetState();
+}
+
+
 void MultipleElementsSelector::setBackgroundImageButtons(const Ogre::String& previousButtonOveredSpriteName,
 	const Ogre::String& previousButtonNotOveredSpriteName,
 	const Ogre::String& previousButtonInactiveSpriteName,

@@ -111,6 +111,10 @@ public:
 	*/
 	virtual void injectTimeAndMousePosition(double time, const Ogre::Vector2& pos) = 0;
 
+	/** \brief Reset the state of the element
+	*/
+	virtual void resetState();
+
 	/** \brief Highlight this element
 	*/
 	virtual void highlight() = 0;
@@ -138,7 +142,7 @@ class RectangleDesigned
 {
 public:
 	RectangleDesigned()
-		: mDesign(nullptr)
+		: mDesign(NULLPTR)
 	{
 	}
 
@@ -172,7 +176,7 @@ class Captioned
 {
 public:
 	Captioned()
-		: mCaption(nullptr)
+		: mCaption(NULLPTR)
 	{
 	}
 

@@ -30,7 +30,7 @@ namespace Gui3D
 {
 
 Container::Container(Gui3D* gui)
-	: mGui3D(gui), mGUILayer(nullptr)
+	: mGui3D(gui), mGUILayer(NULLPTR)
 {
 }
 

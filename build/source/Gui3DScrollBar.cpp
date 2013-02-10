@@ -43,7 +43,7 @@ ScrollBar::ScrollBar(Ogre::Real x,
 	: PanelElementCallback(parentContainer), 
 		mMinValue(minValue), mMaxValue(maxValue),
 		mCursorWidthPercent(0.05), mCursorHeightPercent(1.5),
-		mValue(minValue), mCursor(nullptr), mStep(0.), 
+		mValue(minValue), mCursor(NULLPTR), mStep(0.), 
 		mValuePrecision(0), mFixedValuePrecision(false),
 		mCallCallbackOnSelectingValue(false), mDisplayValue(true)
 {

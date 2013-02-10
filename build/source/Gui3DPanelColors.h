@@ -50,6 +50,8 @@ struct PanelColors
 	*/
 	PanelColors()
 	{
+		transparent = Gorilla::rgb(0, 0, 0, 0);
+
 		// NorthSouth gradient by default
 		panelGradientType = Gorilla::Gradient_NorthSouth;
 

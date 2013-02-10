@@ -63,6 +63,8 @@ public:
 
 	void injectTimeAndMousePosition(double time, const Ogre::Vector2& pos);
 
+	void resetState();
+
 	/** \brief Set the backgrounds images of the previous and next buttons from the texture atlas. 
 		note.
 			To remove the images pass "none" or a empty string to at least one parameter

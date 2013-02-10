@@ -172,6 +172,15 @@ Ogre::Vector2 Button::getPosition()
 }
 
 
+void Button::resetState()
+{
+	mIsClicked = false;
+	mIsActive = true;
+
+	PanelElement::resetState();
+}
+
+
 void Button::setBackgroundImage(const Ogre::String& overSpriteName, 
 	const Ogre::String& notOverSpriteName,
 	const Ogre::String& inactiveSpriteName,
@@ -274,5 +283,6 @@ void Button::_actualize()
 	else
 		_inactive();
 }
+
 
 }

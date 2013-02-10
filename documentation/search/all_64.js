@@ -1,5 +1,20 @@
 var searchData=
 [
   ['debugpanelcolors',['DebugPanelColors',['../struct_gui3_d_1_1_debug_panel_colors.html',1,'Gui3D']]],
-  ['deleteletter',['deleteLetter',['../class_gui3_d_1_1_string_cursor_edit.html#ac69d410a40244b02a7554e4c39231416',1,'Gui3D::StringCursorEdit']]]
+  ['deleteletter',['deleteLetter',['../class_gui3_d_1_1_string_cursor_edit.html#ac69d410a40244b02a7554e4c39231416',1,'Gui3D::StringCursorEdit']]],
+  ['destroy',['destroy',['../class_gorilla_1_1_layer_container.html#aea67cde374f6c9f3fe33d9ddac007780',1,'Gorilla::LayerContainer']]],
+  ['destroyallcaptions',['destroyAllCaptions',['../class_gorilla_1_1_layer.html#a84dfd109b772d00a4e5e39544f3e8612',1,'Gorilla::Layer']]],
+  ['destroyalllinelists',['destroyAllLineLists',['../class_gorilla_1_1_layer.html#af51fb3b28c01f52959712489920684de',1,'Gorilla::Layer']]],
+  ['destroyallmarkuptexts',['destroyAllMarkupTexts',['../class_gorilla_1_1_layer.html#ad956895440c5351dc635901cce57e318',1,'Gorilla::Layer']]],
+  ['destroyallpolygons',['destroyAllPolygons',['../class_gorilla_1_1_layer.html#a5d639003c496633bf8ca338a0cd8b930',1,'Gorilla::Layer']]],
+  ['destroyallquadlists',['destroyAllQuadLists',['../class_gorilla_1_1_layer.html#a7053cc9dbc7a2cff1fc2e911b3f19d36',1,'Gorilla::Layer']]],
+  ['destroyallrectangles',['destroyAllRectangles',['../class_gorilla_1_1_layer.html#ac65d00ab01ec42332bdbc6dad2176859',1,'Gorilla::Layer']]],
+  ['destroycaption',['destroyCaption',['../class_gorilla_1_1_layer.html#a618bc7047cdcc0420be0f37ac69fdab8',1,'Gorilla::Layer']]],
+  ['destroylinelist',['destroyLineList',['../class_gorilla_1_1_layer.html#a89c1f88f29dd9d8ac0d2ea9f94f60350',1,'Gorilla::Layer']]],
+  ['destroymarkuptext',['destroyMarkupText',['../class_gorilla_1_1_layer.html#a4db7f2f78229d3c8809a33920495a282',1,'Gorilla::Layer']]],
+  ['destroypolygon',['destroyPolygon',['../class_gorilla_1_1_layer.html#a8642aca9541a4dec0e00d890cfe37eee',1,'Gorilla::Layer']]],
+  ['destroyquadlist',['destroyQuadList',['../class_gorilla_1_1_layer.html#a8a0f222f53a6677423b29b135000c5d6',1,'Gorilla::Layer']]],
+  ['destroyrectangle',['destroyRectangle',['../class_gorilla_1_1_layer.html#a321df43f88b5df96ee91d3012e884734',1,'Gorilla::Layer']]],
+  ['destroyscreen',['destroyScreen',['../class_gorilla_1_1_silverback.html#a212af4606fd8439b8b32a1af6164fbe8',1,'Gorilla::Silverback']]],
+  ['destroyscreenrenderable',['destroyScreenRenderable',['../class_gorilla_1_1_silverback.html#a292cdecbfc3ce8cf5d7b35fda45af855',1,'Gorilla::Silverback']]]
 ];

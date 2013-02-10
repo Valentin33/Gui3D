@@ -36,6 +36,8 @@
 
 #include <OGRE/Ogre.h>
 
+#include "Gui3DConfig.h"
+
 #ifndef GORILLA_USES_EXCEPTIONS
 #  define GORILLA_USES_EXCEPTIONS 1
 #endif

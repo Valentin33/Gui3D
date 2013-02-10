@@ -72,4 +72,12 @@ void PanelElement::setOvered(bool overed)
 	_actualize();
 }
 
+
+void PanelElement::resetState()
+{
+	mOvered = false;
+	mHasFocus = false;
+	_actualize();
+}
+
 }
