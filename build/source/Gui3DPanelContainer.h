@@ -169,7 +169,7 @@ public:
     
     void destroyScrollBar(ScrollBar*);
     
-    void destroyTextZoneEditable(TextZone*);
+    void destroyTextZone(TextZone*);
 
 protected:
     Ogre::Vector2 mInternalMousePos; //!< \brief The Internal position of the mouse in the panel

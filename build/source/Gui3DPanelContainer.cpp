@@ -433,7 +433,7 @@ void PanelContainer::destroyScrollBar(ScrollBar* s)
 }
     
 
-void PanelContainer::destroyTextZoneEditable(TextZone* t)
+void PanelContainer::destroyTextZone(TextZone* t)
 {
     removeItem(t);
 }

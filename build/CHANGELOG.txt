@@ -9,6 +9,8 @@ Gui3D object : The PanelColor passed as parameter isn't deleted anymore. The use
 ScreenPanel : Added a method to move a screenPanel and its childs (setPosition).
               ScreenPanel doesn't destroy anymore the screen object passed to the constructor but the layer it creates.
 
+PanelContainer : destroyTextZoneEditable(TextZone*) is now destroyTextZone(TextZone*)
+
 Project : Indentation has changed from tabs to spaces.
 
 *****************************
