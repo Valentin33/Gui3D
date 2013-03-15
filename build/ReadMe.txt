@@ -1,7 +1,7 @@
 ﻿Gui3D Library v1.1
 
 *****************************
-	INSTALL INSTRUCTIONS
+    INSTALL INSTRUCTIONS
 *****************************
 
 To compile this static library using Visual studio 2010 :

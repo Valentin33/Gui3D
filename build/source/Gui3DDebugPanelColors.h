@@ -34,12 +34,12 @@ namespace Gui3D
 {
 
 /*! struct. MyDebugPanelColors
-	desc.
-		A PanelColors that you should use in development, to make sure no panel element intersects
+    desc.
+        A PanelColors that you should use in development, to make sure no panel element intersects
 */
 struct DebugPanelColors : public PanelColors
 {
-	DebugPanelColors();
+    DebugPanelColors();
 };
 
 }

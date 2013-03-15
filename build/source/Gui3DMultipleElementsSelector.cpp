@@ -31,87 +31,87 @@ namespace Gui3D
 {
 
 MultipleElementsSelector::MultipleElementsSelector(Ogre::Real x, 
-	Ogre::Real y,
-	size_t width,
-	size_t height,
-	const std::vector<Ogre::String>& items,
-	Container* parentContainer)
-	: PanelElementCallback(parentContainer), 
-		mActualOveredElement(MULTIPLE_ELEMENT_SELECTOR_NO_ELEMENT)
+                                                   Ogre::Real y,
+                                                   size_t width,
+                                                   size_t height,
+                                                   const std::vector<Ogre::String>& items,
+                                                   Container* parentContainer)
+                                                   : PanelElementCallback(parentContainer), 
+                                                      mActualOveredElement(MULTIPLE_ELEMENT_SELECTOR_NO_ELEMENT)
 {
-	mDesign = mParentContainer->getGUILayer()->createRectangle(x, y, width, height);
+    mDesign = mParentContainer->getGUILayer()->createRectangle(x, y, width, height);
 
-	mPreviousElementsButton = new Button(0, 0, 30, 30, "", mParentContainer);
-	mNextElementsButton = new Button(0, 0, 30, 30, "", mParentContainer);
+    mPreviousElementsButton = new Button(0, 0, 30, 30, "", mParentContainer);
+    mNextElementsButton = new Button(0, 0, 30, 30, "", mParentContainer);
 
-	for (size_t i = 0; i < items.size(); i++)
-		addItem(items[i]);
+    for (size_t i = 0; i < items.size(); i++)
+        addItem(items[i]);
 }
 
 
 MultipleElementsSelector::~MultipleElementsSelector()
 {
-	mParentContainer->getGUILayer()->destroyRectangle(mDesign);
+    mParentContainer->getGUILayer()->destroyRectangle(mDesign);
 
-	delete mNextElementsButton;
-	delete mPreviousElementsButton;
+    delete mNextElementsButton;
+    delete mPreviousElementsButton;
 }
 
 
 void MultipleElementsSelector::injectMousePressed(const OIS::MouseEvent& evt, 
-	OIS::MouseButtonID id)
+    OIS::MouseButtonID id)
 {
-	if (id == OIS::MB_Left)
-	{
-		if (mActualOveredElement == MULTIPLE_ELEMENT_SELECTOR_PREVIOUS_ELEMENT_BUTTON)
-		{
-			mPreviousElementsButton->injectMousePressed(evt, id);
-			return;
-		}
-		else if (mActualOveredElement == MULTIPLE_ELEMENT_SELECTOR_NEXT_ELEMENT_BUTTON)
-		{
-			mNextElementsButton->injectMousePressed(evt, id);
-			return;
-		}
-	}
+    if (id == OIS::MB_Left)
+    {
+        if (mActualOveredElement == MULTIPLE_ELEMENT_SELECTOR_PREVIOUS_ELEMENT_BUTTON)
+        {
+            mPreviousElementsButton->injectMousePressed(evt, id);
+            return;
+        }
+        else if (mActualOveredElement == MULTIPLE_ELEMENT_SELECTOR_NEXT_ELEMENT_BUTTON)
+        {
+            mNextElementsButton->injectMousePressed(evt, id);
+            return;
+        }
+    }
 }
 
 
 void MultipleElementsSelector::injectMouseReleased(const OIS::MouseEvent& evt, 
-	OIS::MouseButtonID id)
+    OIS::MouseButtonID id)
 {
-	if (id == OIS::MB_Left)
-	{
-		if (mActualOveredElement == MULTIPLE_ELEMENT_SELECTOR_PREVIOUS_ELEMENT_BUTTON)
-			mPreviousElementsButton->injectMouseReleased(evt, id);
-		else if (mActualOveredElement == MULTIPLE_ELEMENT_SELECTOR_NEXT_ELEMENT_BUTTON)
-			mNextElementsButton->injectMouseReleased(evt, id);
-	}
+    if (id == OIS::MB_Left)
+    {
+        if (mActualOveredElement == MULTIPLE_ELEMENT_SELECTOR_PREVIOUS_ELEMENT_BUTTON)
+            mPreviousElementsButton->injectMouseReleased(evt, id);
+        else if (mActualOveredElement == MULTIPLE_ELEMENT_SELECTOR_NEXT_ELEMENT_BUTTON)
+            mNextElementsButton->injectMouseReleased(evt, id);
+    }
 }
 
 
 bool MultipleElementsSelector::isOver(const Ogre::Vector2& pos)
 {
-	// As the buttons are independant of the rest, first check
-	//  if they are overed.
-	if (mPreviousElementsButton->isOver(pos))
-	{
-		mActualOveredElement = MULTIPLE_ELEMENT_SELECTOR_PREVIOUS_ELEMENT_BUTTON;
-		return true;
-	}
-	else if (mNextElementsButton->isOver(pos))
-	{
-		mActualOveredElement = MULTIPLE_ELEMENT_SELECTOR_NEXT_ELEMENT_BUTTON;
-		return true;
-	}
+    // As the buttons are independant of the rest, first check
+    //  if they are overed.
+    if (mPreviousElementsButton->isOver(pos))
+    {
+        mActualOveredElement = MULTIPLE_ELEMENT_SELECTOR_PREVIOUS_ELEMENT_BUTTON;
+        return true;
+    }
+    else if (mNextElementsButton->isOver(pos))
+    {
+        mActualOveredElement = MULTIPLE_ELEMENT_SELECTOR_NEXT_ELEMENT_BUTTON;
+        return true;
+    }
 
-	return false;
+    return false;
 }
 
 
 void MultipleElementsSelector::addItem(Ogre::String itemName)
 {
-	mValues.push_back(itemName);
+    mValues.push_back(itemName);
 }
 
 
@@ -122,78 +122,78 @@ void MultipleElementsSelector::injectTimeAndMousePosition(double time, const Ogr
 
 void MultipleElementsSelector::resetState()
 {
-	mPreviousElementsButton->resetState();
-	mNextElementsButton->resetState();
+    mPreviousElementsButton->resetState();
+    mNextElementsButton->resetState();
 
-	PanelElement::resetState();
+    PanelElement::resetState();
 }
 
 
 void MultipleElementsSelector::setBackgroundImageButtons(const Ogre::String& previousButtonOveredSpriteName,
-	const Ogre::String& previousButtonNotOveredSpriteName,
-	const Ogre::String& previousButtonInactiveSpriteName,
-	const Ogre::String& previousButtonClickedSpriteName,
-	const Ogre::String& nextButtonOveredSpriteName,
-	const Ogre::String& nextButtonNotOveredSpriteName,
-	const Ogre::String& nextButtonInactiveSpriteName,
-	const Ogre::String& nextButtonClickedSpriteName)
+                                                         const Ogre::String& previousButtonNotOveredSpriteName,
+                                                         const Ogre::String& previousButtonInactiveSpriteName,
+                                                         const Ogre::String& previousButtonClickedSpriteName,
+                                                         const Ogre::String& nextButtonOveredSpriteName,
+                                                         const Ogre::String& nextButtonNotOveredSpriteName,
+                                                         const Ogre::String& nextButtonInactiveSpriteName,
+                                                         const Ogre::String& nextButtonClickedSpriteName)
 {
-	// Make sure buttons background images are not empty or none
-	//  to remove the text on buttons
-	if (previousButtonOveredSpriteName.length() == 0 || previousButtonOveredSpriteName == "none" ||
-		previousButtonNotOveredSpriteName.length() == 0 || previousButtonNotOveredSpriteName == "none" ||
-		previousButtonInactiveSpriteName.length() == 0 || previousButtonInactiveSpriteName == "none" ||
-		previousButtonClickedSpriteName.length() == 0 || previousButtonClickedSpriteName == "none" ||
-		nextButtonOveredSpriteName.length() == 0 || nextButtonOveredSpriteName == "none" ||
-		nextButtonNotOveredSpriteName.length() == 0 || nextButtonNotOveredSpriteName == "none" ||
-		nextButtonInactiveSpriteName.length() == 0 || nextButtonInactiveSpriteName == "none" ||
-		nextButtonClickedSpriteName.length() == 0 || nextButtonClickedSpriteName == "none")
-	{
-		mPreviousElementsButton->setText("<");
-		mNextElementsButton->setText(">");
-	}
-	else
-	{
-		mPreviousElementsButton->setBackgroundImage(previousButtonOveredSpriteName, 
-			previousButtonNotOveredSpriteName, 
-			previousButtonInactiveSpriteName,
-			previousButtonClickedSpriteName);
-		mPreviousElementsButton->setText("");
+    // Make sure buttons background images are not empty or none
+    //  to remove the text on buttons
+    if (previousButtonOveredSpriteName.length() == 0    || previousButtonOveredSpriteName == "none"     ||
+        previousButtonNotOveredSpriteName.length() == 0 || previousButtonNotOveredSpriteName == "none"  ||
+        previousButtonInactiveSpriteName.length() == 0  || previousButtonInactiveSpriteName == "none"   ||
+        previousButtonClickedSpriteName.length() == 0   || previousButtonClickedSpriteName == "none"    ||
+        nextButtonOveredSpriteName.length() == 0        || nextButtonOveredSpriteName == "none"         ||
+        nextButtonNotOveredSpriteName.length() == 0     || nextButtonNotOveredSpriteName == "none"      ||
+        nextButtonInactiveSpriteName.length() == 0      || nextButtonInactiveSpriteName == "none"       ||
+        nextButtonClickedSpriteName.length() == 0       || nextButtonClickedSpriteName == "none")
+    {
+        mPreviousElementsButton->setText("<");
+        mNextElementsButton->setText(">");
+    }
+    else
+    {
+        mPreviousElementsButton->setBackgroundImage(previousButtonOveredSpriteName, 
+                                                    previousButtonNotOveredSpriteName, 
+                                                    previousButtonInactiveSpriteName,
+                                                    previousButtonClickedSpriteName);
+        mPreviousElementsButton->setText("");
 
-		mNextElementsButton->setBackgroundImage(nextButtonOveredSpriteName, 
-			nextButtonNotOveredSpriteName, 
-			nextButtonInactiveSpriteName,
-			nextButtonClickedSpriteName);
-		mNextElementsButton->setText("");
-	}
+        mNextElementsButton->setBackgroundImage(nextButtonOveredSpriteName, 
+                                                nextButtonNotOveredSpriteName, 
+                                                nextButtonInactiveSpriteName,
+                                                nextButtonClickedSpriteName);
+        mNextElementsButton->setText("");
+    }
 }
 
 
 void MultipleElementsSelector::setPosition(int left, int top)
 {
-	Ogre::Real decalLeft = left - mDesign->left();
-	Ogre::Real decalTop = top - mDesign->top();
+    Ogre::Real decalLeft = left - mDesign->left();
+    Ogre::Real decalTop = top - mDesign->top();
 
-	mDesign->left(mDesign->left()+decalLeft);
-	mDesign->top(mDesign->top()+decalTop);
+    mDesign->left(mDesign->left()+decalLeft);
+    mDesign->top(mDesign->top()+decalTop);
 
-	Ogre::Vector2 pButtonPos = mPreviousElementsButton->getPosition() + Ogre::Vector2(decalLeft, decalTop);
-	mPreviousElementsButton->setPosition(pButtonPos.x, pButtonPos.y);
+    Ogre::Vector2 pButtonPos = mPreviousElementsButton->getPosition() + Ogre::Vector2(decalLeft, decalTop);
+    mPreviousElementsButton->setPosition(pButtonPos.x, pButtonPos.y);
 
-	Ogre::Vector2 nButtonPos = mNextElementsButton->getPosition() + Ogre::Vector2(decalLeft, decalTop);
-	mNextElementsButton->setPosition(nButtonPos.x, nButtonPos.y);
+    Ogre::Vector2 nButtonPos = mNextElementsButton->getPosition() + Ogre::Vector2(decalLeft, decalTop);
+    mNextElementsButton->setPosition(nButtonPos.x, nButtonPos.y);
 }
 
 
 Button* MultipleElementsSelector::getPreviousElementsButton()
 {
-	return mPreviousElementsButton;
+    return mPreviousElementsButton;
 }
 
 
 Button* MultipleElementsSelector::getNextElementsButton()
 {
-	return mNextElementsButton;
+    return mNextElementsButton;
 }
 
 }

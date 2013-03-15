@@ -1642,11 +1642,11 @@ namespace Gorilla
 #if GORILLA_USES_EXCEPTIONS == 1
        // Gui3D CHANGES ; now, if a sprite isn't found, its informations will be in the exception.
        std::ostringstream s;
-	   s << "Sprite not found > infos : \n";
-	   s << "uvLeft : " << sprite->uvLeft << ", ";
-	   s << "uvTop : " << sprite->uvTop << ", ";
-	   s << "width : " << sprite->spriteWidth << ", ";
-	   s << "height : " << sprite->spriteHeight;
+       s << "Sprite not found > infos : \n";
+       s << "uvLeft : " << sprite->uvLeft << ", ";
+       s << "uvTop : " << sprite->uvTop << ", ";
+       s << "width : " << sprite->spriteWidth << ", ";
+       s << "height : " << sprite->spriteHeight;
        OGRE_EXCEPT( Ogre::Exception::ERR_ITEM_NOT_FOUND, s.str(), __FUNC__ );
 #else
        return;
@@ -1690,11 +1690,11 @@ namespace Gorilla
 #if GORILLA_USES_EXCEPTIONS == 1
        // Gui3D CHANGES ; now, if a sprite isn't found, its informations will be in the exception.
        std::ostringstream s;
-	   s << "Sprite not found > infos : \n";
-	   s << "uvLeft : " << sprite->uvLeft << ", ";
-	   s << "uvTop : " << sprite->uvTop << ", ";
-	   s << "width : " << sprite->spriteWidth << ", ";
-	   s << "height : " << sprite->spriteHeight;
+       s << "Sprite not found > infos : \n";
+       s << "uvLeft : " << sprite->uvLeft << ", ";
+       s << "uvTop : " << sprite->uvTop << ", ";
+       s << "width : " << sprite->spriteWidth << ", ";
+       s << "height : " << sprite->spriteHeight;
        OGRE_EXCEPT( Ogre::Exception::ERR_ITEM_NOT_FOUND, s.str(), __FUNC__ );
 #else
        return;
@@ -2503,8 +2503,8 @@ namespace Gorilla
      {
        mDirty        = false;
    #if GORILLA_USES_EXCEPTIONS == 1
-	   std::ostringstream s;
-	   s << "Glyph data [Font." << font_index << "] not found";
+       std::ostringstream s;
+       s << "Glyph data [Font." << font_index << "] not found";
        OGRE_EXCEPT( Ogre::Exception::ERR_ITEM_NOT_FOUND, s.str(), __FUNC__ );
    #else
        return;

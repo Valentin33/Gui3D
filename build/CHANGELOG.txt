@@ -1,7 +1,18 @@
-Gui3D Library v1.1
+Gui3D Library v1.11
 
 *****************************
-	CHANGELOG FOR 1.1 version
+    CHANGELOG FOR 1.11 version
+*****************************
+
+Gui3D object : The PanelColor passed as parameter isn't deleted anymore. The user has to do it on is own.
+
+ScreenPanel : Added a method to move a screenPanel and its childs (setPosition).
+              ScreenPanel doesn't destroy anymore the screen object passed to the constructor but the layer it creates.
+
+Project : Indentation has changed from tabs to spaces.
+
+*****************************
+    CHANGELOG FOR 1.1 version
 *****************************
 
 ScreenPanel : Added the ScreenPanel object that add 2D GUI widgets.
@@ -13,24 +24,24 @@ Panel+ScreenPanel : added "showInternalMouseCursor" and "hideInternalMouseCursor
 Project : Fix nullptr (with NULLPTR constant) for compiler that doesnt support it.
 
 *****************************
-	CHANGELOG FOR 1.01 version
+    CHANGELOG FOR 1.01 version
 *****************************
 
 ScrollBar : call the callback when the value is updating (not only when value is confirmed by a mouseRelease).
-			See ScrollBar::setCallCallbackOnSelecting(bool)
+            See ScrollBar::setCallCallbackOnSelecting(bool)
 
 Panel : Display a mouse on each panel >> Added a Panel::distanceFromPanelToInteractWith (with setter), 
-			and a sprite which follow the internal mouse position. PanelColors : panelCursorSpriteName, panelCursorSpriteSizeX, panelCursorSpriteSizeY
+            and a sprite which follow the internal mouse position. PanelColors : panelCursorSpriteName, panelCursorSpriteSizeX, panelCursorSpriteSizeY
 
 PanelColors : default value for the border and text size in PanelColors. Unitialized int can produce undesired behavior (such as a VERY big border)
 
 Button : Added buttonBackgroundClickedGradientType + buttonClickedSpriteName in the PanelColors
-		> Added a new parameter for Button::setBackgroundImage() : clickedSpriteName
-		> Because of the previous change, added two new parameter for 
-			the setBackgroundImage method (nextButtonClickedSpriteName + previousButtonClickedSpriteName) of :
-			- Combobox
-			- ListBox
-			- InlineSelector
+        > Added a new parameter for Button::setBackgroundImage() : clickedSpriteName
+        > Because of the previous change, added two new parameter for 
+            the setBackgroundImage method (nextButtonClickedSpriteName + previousButtonClickedSpriteName) of :
+            - Combobox
+            - ListBox
+            - InlineSelector
 
 Project : Update the project to automatically copy header and lib files into sdk/ folder instead of doing it manually.
 
