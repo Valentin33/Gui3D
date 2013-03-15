@@ -119,8 +119,6 @@ public:
 
     void destroyScreen(Gorilla::Screen* screen);
 
-    void destroyLayerScreen(Gorilla::Layer* layer);
-
     /** \brief Set the colors rules of the Gui3D. 
     The PanelColors object will automatically be destroyed by the Gui3D destructor.
     */

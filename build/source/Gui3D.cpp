@@ -330,16 +330,6 @@ void Gui3D::destroyScreen(Gorilla::Screen* screen)
         }
 }
 
-void Gui3D::destroyLayerScreen(Gorilla::Layer* layer)
-{
-    layer->destroyAllCaptions();
-    layer->destroyAllLineLists();
-    layer->destroyAllMarkupTexts();
-    layer->destroyAllPolygons();
-    layer->destroyAllQuadLists();
-    layer->destroyAllRectangles();
-}
-
 
 void Gui3D::setPanelColors(PanelColors* panelColors)
 {
