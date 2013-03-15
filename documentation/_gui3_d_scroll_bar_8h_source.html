@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>Gui3D: srcGui3D1.1/Gui3DScrollBar.h Source File</title>
+<title>Gui3D: Gui3DScrollBar.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="GuiLogo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Gui3D
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.11</span>
    </div>
    <div id="projectbrief">Gui3D is a free library for OGRE3D that make you able to build 2D menu in a 3D environment, based on Gorilla, made by betajean.</div>
   </td>
@@ -81,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">srcGui3D1.1/Gui3DScrollBar.h</div>  </div>
+<div class="title">Gui3DScrollBar.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
@@ -130,12 +131,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_gui3_d_1_1_scroll_bar.html">ScrollBar</a>(Ogre::Real x, </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        Ogre::Real y,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">size_t</span> width,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">size_t</span> height,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        Ogre::Real minValue,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        Ogre::Real maxValue,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_gui3_d_1_1_container.html">Container</a>* parentContainer);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;              Ogre::Real y,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;              <span class="keywordtype">size_t</span> width,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;              <span class="keywordtype">size_t</span> height,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;              Ogre::Real minValue,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;              Ogre::Real maxValue,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;              <a class="code" href="class_gui3_d_1_1_container.html">Container</a>* parentContainer);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    ~<a class="code" href="class_gui3_d_1_1_scroll_bar.html">ScrollBar</a>();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    </div>
@@ -146,10 +147,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gui3_d_1_1_scroll_bar.html#a9598f3ae142755b9c114dd0812114639" title="Inject actual pressed key (Usefull when some keys were pressed when the element get the focus)...">injectKeys</a>(std::vector&lt;OIS::KeyCode&gt;&amp; keys);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gui3_d_1_1_scroll_bar.html#a4358fd1edb3e58cfd38f9615fa083abe" title="Inject a mouse pressed. The element can loose the focus.">injectMousePressed</a>(<span class="keyword">const</span> OIS::MouseEvent&amp; evt, </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        OIS::MouseButtonID <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                            OIS::MouseButtonID <span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gui3_d_1_1_scroll_bar.html#a169e120b754c008088b98339a4ee1e94" title="Inject a mouse released. The element can loose the focus.">injectMouseReleased</a>(<span class="keyword">const</span> OIS::MouseEvent&amp; evt, </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        OIS::MouseButtonID <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                             OIS::MouseButtonID <span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_gui3_d_1_1_scroll_bar.html#a44682c051d7ed260cb31a581f16fd5aa" title="Tests if the element isOver by something at the position pos.">isOver</a>(<span class="keyword">const</span> Ogre::Vector2&amp; pos);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    </div>
@@ -174,7 +175,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gui3_d_1_1_scroll_bar.html#aa8f11c2513b720867b28374c4ce90034" title="Set if the value should be displayed on the widget.">setDisplayValue</a>(<span class="keywordtype">bool</span> displayValue);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gui3_d_1_1_scroll_bar.html#afbf27cb24ccbfb9e1aeceeedee8dbb06" title="Set the cursor width and height depending on the element width and height.">setCursorWidthHeightPercent</a>(Ogre::Real widthPercent, </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        Ogre::Real heightPercent);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                     Ogre::Real heightPercent);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00112"></a><span class="lineno"><a class="code" href="class_gui3_d_1_1_scroll_bar.html#ac98cf0bf41a0d9c50aee22046e225566">  112</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gui3_d_1_1_scroll_bar.html#ac98cf0bf41a0d9c50aee22046e225566" title="Define the callback when a release click has been performed.">setValueChangedCallback</a>(T* <span class="keywordtype">object</span>, <span class="keywordtype">bool</span>(T::*method)(<a class="code" href="class_gui3_d_1_1_panel_element.html">PanelElement</a>*))</div>
@@ -185,8 +186,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gui3_d_1_1_scroll_bar.html#ab6fe95b1415be029cad721c4f558fc58" title="Highlight this element.">highlight</a>();</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gui3_d_1_1_scroll_bar.html#a7331215811a64198340db03a2aa64fd3" title="Set the backgrounds images of the cursor from the texture atlas. note. To remove the images pass on &quot;...">setCursorSprites</a>(<span class="keyword">const</span> Ogre::String&amp; cursorOveredSpriteName,</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keyword">const</span> Ogre::String&amp; cursorNotOveredSpriteName,</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keyword">const</span> Ogre::String&amp; cursorSelectedOveredSpriteName);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                          <span class="keyword">const</span> Ogre::String&amp; cursorNotOveredSpriteName,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                          <span class="keyword">const</span> Ogre::String&amp; cursorSelectedOveredSpriteName);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_gui3_d_1_1_scroll_bar.html#a79eed05b5cf9cff64a21da9137e9d0aa" title="Set if the callback function should be called even when the user is selecting the value (not only whe...">setCallCallbackOnSelectingValue</a>(<span class="keywordtype">bool</span> callCallbackOnSelectingalue);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
@@ -244,7 +245,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 10 2013 20:22:24 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 15 2013 16:11:18 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

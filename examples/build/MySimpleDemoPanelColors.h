@@ -4,12 +4,12 @@
 #include "Gui3DPanelColors.h"
 
 /*! struct. MySimpleDemoPanelColors
-	desc.
-		Example of customisation of Gui3D colors
+    desc.
+        Example of customisation of Gui3D colors
 */
 struct MySimpleDemoPanelColors : public Gui3D::PanelColors
 {
-	MySimpleDemoPanelColors();
+    MySimpleDemoPanelColors();
 };
 
 #endif

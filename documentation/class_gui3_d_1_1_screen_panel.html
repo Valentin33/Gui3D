@@ -21,9 +21,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="GuiLogo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Gui3D
-   &#160;<span id="projectnumber">1.1</span>
+   &#160;<span id="projectnumber">1.11</span>
    </div>
    <div id="projectbrief">Gui3D is a free library for OGRE3D that make you able to build 2D menu in a 3D environment, based on Gorilla, made by betajean.</div>
   </td>
@@ -108,14 +109,18 @@ Inheritance diagram for Gui3D::ScreenPanel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae78f357e7df4f5c1f76cd49b03fabf71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae78f357e7df4f5c1f76cd49b03fabf71"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_screen_panel.html#ae78f357e7df4f5c1f76cd49b03fabf71">ScreenPanel</a> (<a class="el" href="class_gui3_d_1_1_gui3_d.html">Gui3D</a> *gui, <a class="el" href="class_gorilla_1_1_screen.html">Gorilla::Screen</a> *screen, const Ogre::Vector2 &amp;startPosition, const Ogre::Vector2 &amp;size, Ogre::String atlasName, Ogre::String name)</td></tr>
-<tr class="memdesc:ae78f357e7df4f5c1f76cd49b03fabf71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new layer on the  to display widgets. <br/></td></tr>
-<tr class="separator:ae78f357e7df4f5c1f76cd49b03fabf71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac280e3e87ed6683b933058b485fd82c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac280e3e87ed6683b933058b485fd82c6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_screen_panel.html#ac280e3e87ed6683b933058b485fd82c6">ScreenPanel</a> (<a class="el" href="class_gui3_d_1_1_gui3_d.html">Gui3D</a> *gui, <a class="el" href="class_gorilla_1_1_screen.html">Gorilla::Screen</a> *screen, const Ogre::Vector2 &amp;startPosition, const Ogre::Vector2 &amp;size, const Ogre::String &amp;atlasName, const Ogre::String &amp;name)</td></tr>
+<tr class="memdesc:ac280e3e87ed6683b933058b485fd82c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new layer on the  to display widgets. <br/></td></tr>
+<tr class="separator:ac280e3e87ed6683b933058b485fd82c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca8d2d43acfae20ac8ed63c7a68ba4e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca8d2d43acfae20ac8ed63c7a68ba4e0"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_screen_panel.html#aca8d2d43acfae20ac8ed63c7a68ba4e0">injectMouseMoved</a> (const Ogre::Real &amp;x, const Ogre::Real &amp;y)</td></tr>
 <tr class="memdesc:aca8d2d43acfae20ac8ed63c7a68ba4e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give coordinates of the external mouse to this screen. <br/></td></tr>
 <tr class="separator:aca8d2d43acfae20ac8ed63c7a68ba4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54bf38eeb3cfc81a83a00057c16ed7c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54bf38eeb3cfc81a83a00057c16ed7c7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gui3_d_1_1_screen_panel.html#a54bf38eeb3cfc81a83a00057c16ed7c7">setPosition</a> (const Ogre::Vector2 &amp;startPosition)</td></tr>
+<tr class="memdesc:a54bf38eeb3cfc81a83a00057c16ed7c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the position of this screenPanel. <br/></td></tr>
+<tr class="separator:a54bf38eeb3cfc81a83a00057c16ed7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ba605866ee38144a54fd2d4ff8f29fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ba605866ee38144a54fd2d4ff8f29fd"></a>
 virtual <a class="el" href="class_gui3_d_1_1_button.html">Button</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>makeButton</b> (Ogre::Real x, Ogre::Real y, size_t width, size_t height, const Ogre::String &amp;text)</td></tr>
 <tr class="separator:a7ba605866ee38144a54fd2d4ff8f29fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,13 +276,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a25f5d66ea9d6ea8345227330c4545687 inherit pro_methods_class_gui3_d_1_1_panel_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>srcGui3D1.1/<a class="el" href="_gui3_d_screen_panel_8h_source.html">Gui3DScreenPanel.h</a></li>
-<li>srcGui3D1.1/Gui3DScreenPanel.cpp</li>
+<li><a class="el" href="_gui3_d_screen_panel_8h_source.html">Gui3DScreenPanel.h</a></li>
+<li>Gui3DScreenPanel.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 10 2013 20:22:26 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 15 2013 16:11:24 for Gui3D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

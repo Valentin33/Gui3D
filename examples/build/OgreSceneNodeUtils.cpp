@@ -30,48 +30,48 @@
 
 //
 bool OgreSceneNodeUtils::moveSceneNode(Ogre::SceneNode* nodeToMove,
-	Ogre::SceneNode* destinationNode,
-	Ogre::Real speed)
+    Ogre::SceneNode* destinationNode,
+    Ogre::Real speed)
 {
-	Ogre::Vector3 vNodeToMove = nodeToMove->_getDerivedPosition();
-	Ogre::Vector3 vNodeDestination = destinationNode->_getDerivedPosition();
+    Ogre::Vector3 vNodeToMove = nodeToMove->_getDerivedPosition();
+    Ogre::Vector3 vNodeDestination = destinationNode->_getDerivedPosition();
 
-	// when the translation node is getting closer of the destination
-	//  node, reduce its speed
-	if (vNodeToMove.positionCloses(vNodeDestination, Ogre::Real(0.001)))
-		speed /= 10;
+    // when the translation node is getting closer of the destination
+    //  node, reduce its speed
+    if (vNodeToMove.positionCloses(vNodeDestination, Ogre::Real(0.001)))
+        speed /= 10;
 
-	Ogre::Real translateX = vNodeDestination.x;
-	Ogre::Real translateY = vNodeDestination.y;
-	Ogre::Real translateZ = vNodeDestination.z;
+    Ogre::Real translateX = vNodeDestination.x;
+    Ogre::Real translateY = vNodeDestination.y;
+    Ogre::Real translateZ = vNodeDestination.z;
 
-	// translate on X axis
-	if (vNodeToMove.x < vNodeDestination.x)
-		translateX = std::min(vNodeDestination.x,
-			vNodeToMove.x + (speed));
-	else if (vNodeToMove.x > vNodeDestination.x)
-		translateX = std::max(vNodeDestination.x,
-			vNodeToMove.x - (speed));
+    // translate on X axis
+    if (vNodeToMove.x < vNodeDestination.x)
+        translateX = std::min(vNodeDestination.x,
+            vNodeToMove.x + (speed));
+    else if (vNodeToMove.x > vNodeDestination.x)
+        translateX = std::max(vNodeDestination.x,
+            vNodeToMove.x - (speed));
 
-	// translate on Y axis
-	if (vNodeToMove.y < vNodeDestination.y)
-		translateY = std::min(vNodeDestination.y,
-			vNodeToMove.y + (speed));
-	else if (vNodeToMove.y > vNodeDestination.y)
-		translateY = std::max(vNodeDestination.y,
-			vNodeToMove.y - (speed));
+    // translate on Y axis
+    if (vNodeToMove.y < vNodeDestination.y)
+        translateY = std::min(vNodeDestination.y,
+            vNodeToMove.y + (speed));
+    else if (vNodeToMove.y > vNodeDestination.y)
+        translateY = std::max(vNodeDestination.y,
+            vNodeToMove.y - (speed));
 
-	// translate on Z axis
-	if (vNodeToMove.z < vNodeDestination.z)
-		translateZ = std::min(vNodeDestination.z,
-			vNodeToMove.z + (speed));
-	else if (vNodeToMove.z > vNodeDestination.z)
-		translateZ = std::max(vNodeDestination.z,
-			vNodeToMove.z - (speed));
+    // translate on Z axis
+    if (vNodeToMove.z < vNodeDestination.z)
+        translateZ = std::min(vNodeDestination.z,
+            vNodeToMove.z + (speed));
+    else if (vNodeToMove.z > vNodeDestination.z)
+        translateZ = std::max(vNodeDestination.z,
+            vNodeToMove.z - (speed));
 
-	// move the sceneNode
-	nodeToMove->setPosition(Ogre::Vector3(translateX, translateY, translateZ));
+    // move the sceneNode
+    nodeToMove->setPosition(Ogre::Vector3(translateX, translateY, translateZ));
 
-	// if close enought, consider it's on it
-	return !vNodeDestination.positionCloses(vNodeToMove, Ogre::Real(0.00001));
+    // if close enought, consider it's on it
+    return !vNodeDestination.positionCloses(vNodeToMove, Ogre::Real(0.00001));
 }
